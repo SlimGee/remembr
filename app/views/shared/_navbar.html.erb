@@ -74,10 +74,10 @@
           </div>
           <!-- Button Group -->
           <div class="flex flex-wrap gap-x-1.5 items-center">
-
-            <%= link_to "Login", "/ruby-book", class: "btn-outline" %>
-
-            <%= link_to "Create Notice", "/ruby-book", class: "btn-primary" %>
+            <% if !user_signed_in? %>
+              <%= link_to "Login", new_user_session_path, class: "btn-outline" %>
+            <% end %>
+            <%= link_to "Create Notice", new_notice_path, class: "btn-primary" %>
           </div>
           <!-- End Button Group -->
         </div>
