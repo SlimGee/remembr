@@ -1,0 +1,64 @@
+<div class="container mx-auto">
+  <div
+    class="mx-auto mt-7 max-w-md bg-white rounded border dark:bg-neutral-900 dark:border-neutral-700"
+  >
+    <div class="p-4 sm:p-7">
+      <div class="text-center">
+        <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Sign in</h1>
+        <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
+          Don't have an account yet?
+          <%= link_to "Sign up here", new_registration_path(resource_name), class: "link" %>
+        </p>
+      </div>
+
+      <div class="mt-5">
+        <%= button_to user_google_oauth2_omniauth_authorize_path, data: { turbo: false }, class: 'btn-outline' do %>
+          <%= render "devise/shared/google" %>
+          Continue with Google
+        <% end %>
+
+        <div class="centerline">Or</div>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+          <div class="mb-3 w-full">
+            <%= f.label :email %><br/>
+            <%= f.email_field :email,
+                          autocomplete: "email",
+                          class:
+                            class_names(
+                              "w-full form-input",
+                              "border-red-400": !flash[:alert].nil?,
+                            ) %>
+
+            <%= content_tag :div,
+              id: "flash_error",
+              class: "text-red-400 mt-1 text-sm font-medium" do %>
+              <%= alert %>
+
+            <% end %>
+
+          </div>
+
+          <div class="field">
+            <%= f.label :password %><br/>
+            <%= f.password_field :password,
+                             autocomplete: "current-password",
+                             class: "w-full form-input" %>
+          </div>
+
+          <% if devise_mapping.rememberable? %>
+            <div class="field">
+              <%= f.check_box :remember_me, class: "checkbox" %>
+              <%= f.label :remember_me %>
+            </div>
+          <% end %>
+
+          <div class="actions">
+            <%= f.submit "Log in", class: "justify-center w-full btn-primary" %>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

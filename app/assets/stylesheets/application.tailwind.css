@@ -11,3 +11,30 @@
 }
 
 */
+@layer components {
+  .form-input {
+    @apply rounded border-gray-200;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center px-3 sm:px-3 py-2.5 sm:py-2.5 bg-blue-600 border border-transparent rounded font-semibold text-sm text-white text-center tracking-wide hover:bg-blue-700 active:bg-blue-900 focus:outline-none focus:shadow-blue-800 hover:bg-blue-900 transition ease-in-out duration-150;
+  }
+
+  .btn-outline {
+    @apply inline-flex gap-x-2 justify-center items-center py-3 px-4 w-full text-sm font-medium text-gray-800 bg-white rounded border border-gray-200 shadow-sm dark:text-white hover:bg-gray-50 focus:bg-gray-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800;
+  }
+
+  .link {
+    @apply font-medium text-blue-600 dark:text-blue-500 hover:underline focus:underline focus:outline-none decoration-2;
+  }
+
+  .centerline {
+    @apply flex items-center py-3 text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-neutral-500 dark:before:border-neutral-600 dark:after:border-neutral-600;
+  }
+  .field {
+    @apply w-full mb-3;
+  }
+  .checkbox {
+    @apply shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800;
+  }
+}

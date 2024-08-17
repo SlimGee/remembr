@@ -1,0 +1,43 @@
+<div class="container mx-auto">
+  <div
+    class="mx-auto mt-7 max-w-md bg-white rounded dark:bg-neutral-900 dark:border-neutral-700"
+  >
+    <div class="p-4 sm:p-7">
+      <div class="text-center">
+        <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">
+          We need to confirm your email address
+        </h1>
+        <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
+          Before proceeding, please check your email for a confirmation link
+        </p>
+      </div>
+
+      <div class="mt-5">
+        <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+
+          <div class="field">
+            <%= f.label :email %>
+            <%= f.email_field :email,
+                          autofocus: true,
+                          autocomplete: "email",
+                          value:
+                            (
+                              if resource.pending_reconfirmation?
+                                resource.unconfirmed_email
+                              else
+                                resource.email
+                              end
+                            ),
+                          class: "form-input w-full" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Resend confirmation instructions",
+                     class: "btn-primary w-full justify-center" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

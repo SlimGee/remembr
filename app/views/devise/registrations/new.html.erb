@@ -1,0 +1,56 @@
+<div class="container mx-auto">
+  <div
+    class="mx-auto mt-7 max-w-md bg-white rounded border dark:bg-neutral-900 dark:border-neutral-700"
+  >
+    <div class="p-4 sm:p-7">
+      <div class="text-center">
+        <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Sign up</h1>
+        <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
+          Already have an account?
+          <%= link_to "Sign in here", new_session_path(resource_name), class: "link" %>
+        </p>
+      </div>
+
+      <div class="mt-5">
+        <%= button_to user_google_oauth2_omniauth_authorize_path, data: { turbo: false }, class: 'btn-outline' do %>
+          <%= render "devise/shared/google" %>
+          Continue with Google
+        <% end %>
+
+        <div class="centerline">Or</div>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+
+          <div class="mb-3 w-full field">
+            <%= f.label :email %><br/>
+            <%= f.email_field :email, autocomplete: "email", class: "w-full form-input" %>
+          </div>
+
+          <div class="mb-3 w-full field">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %>
+                characters minimum)</em>
+            <% end %><br/>
+            <%= f.password_field :password,
+                             autocomplete: "new-password",
+                             class: "w-full form-input" %>
+          </div>
+
+          <div class="mb-3 w-full field">
+            <%= f.label :password_confirmation %><br/>
+            <%= f.password_field :password_confirmation,
+                             autocomplete: "new-password",
+                             class: "w-full form-input" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Sign up", class: "btn-primary w-full justify-center" %>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+
+  </div>
+</div>
