@@ -12,7 +12,7 @@
       </div>
 
       <div class="mt-5">
-        <%= button_to user_google_oauth2_omniauth_authorize_path, data: { turbo: false }, class: 'btn-outline' do %>
+        <%= button_to user_google_oauth2_omniauth_authorize_path, data: { turbo: false }, class: 'btn-outline w-full justify-center' do %>
           <%= render "devise/shared/google" %>
           Continue with Google
         <% end %>

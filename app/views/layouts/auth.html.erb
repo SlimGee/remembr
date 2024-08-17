@@ -19,7 +19,9 @@
   </head>
 
   <body>
-    <main class="container px-5 mx-auto">
+    <%= render "shared/navbar" %>
+
+    <main class="container px-5 mx-auto lg:px-8 max-w-[85rem]">
       <%= render "shared/notifications" %>
       <%= yield %>
     </main>
