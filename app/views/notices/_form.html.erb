@@ -1,93 +1,65 @@
 <%= form_with(model: notice, class: "contents") do |form| %>
-  <% if notice.errors.any? %>
-    <div
-      id="error_explanation"
-      class="py-2 px-3 mt-3 font-medium text-red-500 bg-red-50 rounded-lg"
-    >
-      <h2><%= pluralize(notice.errors.count, "error") %>
-        prohibited this notice from being saved:</h2>
-
-      <ul>
-        <% notice.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
 
   <div class="my-5">
     <%= form.label :category %>
-    <%= form.text_field :category,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :category, class: "form-input mt-2 w-full" %>
+
   </div>
 
   <div class="my-5">
     <%= form.label :location %>
-    <%= form.text_field :location,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :location, class: "form-input  mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :platform %>
-    <%= form.text_field :platform,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :platform, class: "form-input mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :first_name, class: "form-input px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :last_name, class: "form-input mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :dob %>
-    <%= form.date_field :dob,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :dob,
+                    class: "form-input mt-2 w-full",
+                    data: {
+                      controller: "datepicker",
+                    } %>
   </div>
 
   <div class="my-5">
     <%= form.label :dod %>
-    <%= form.date_field :dod,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :dod,
+                    class: "form-input mt-2 w-full",
+                    data: {
+                      controller: "datepicker",
+                    } %>
   </div>
 
   <div class="my-5">
     <%= form.label :nickname %>
-    <%= form.text_field :nickname,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :nickname, class: "form-input mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :wording %>
-    <%= form.text_area :wording,
-                   rows: 4,
-                   class:
-                     "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_area :wording, rows: 4, class: "form-input mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :relationship %>
-    <%= form.text_field :relationship,
-                    class:
-                      "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :relationship, class: "form-input mt-2 w-full" %>
   </div>
 
   <div class="inline">
-    <%= form.submit class:
-                  "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= form.submit class: "btn-primary" %>
   </div>
 <% end %>

@@ -38,3 +38,13 @@
 !/app/assets/builds/.keep
 
 /config/credentials/development.key
+
+/node_modules
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
