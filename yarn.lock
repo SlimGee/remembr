@@ -344,6 +344,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stimulus-components/carousel@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@stimulus-components/carousel@npm:6.0.0"
+  dependencies:
+    swiper: "npm:^11.0.6"
+  peerDependencies:
+    "@hotwired/stimulus": ^3
+  checksum: 10c0/00b28d7fa97933960e020f72fba89567ae6335823840c0f001e31a2420e588a3a087af1f82069d5b5f983fee70204fb165093df27e12f77773e5874e9f6a5826
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:^0.2.13":
   version: 0.2.14
   resolution: "@swc/helpers@npm:0.2.14"
@@ -474,6 +485,7 @@ __metadata:
     "@popperjs/core": "npm:^2.11.8"
     "@preline/file-upload": "npm:^2.4.1"
     "@preline/tooltip": "npm:^2.4.1"
+    "@stimulus-components/carousel": "npm:^6.0.0"
     "@tailwindcss/container-queries": "npm:^0.1.1"
     "@tailwindcss/forms": "npm:^0.5.7"
     "@tailwindcss/typography": "npm:^0.5.14"
@@ -1875,6 +1887,13 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 10c0/6c4032340701a9950865f7ae8ef38578d8d7053f5e10518076e6554a9381fa91bd9c6850193695c141f32b21f979c985db07265a758867bac95de05f7d8aeb39
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^11.0.6":
+  version: 11.1.9
+  resolution: "swiper@npm:11.1.9"
+  checksum: 10c0/75666f358c78bedf69f3db9ee83c4f4213bf7e87d42708bb3b87a11f7a85da13e73444f670e6ee1d35642a35c889241c8c525033621965345199f42cb141e616
   languageName: node
   linkType: hard
 

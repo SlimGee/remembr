@@ -1,4 +1,5 @@
 @import "air-datepicker/air-datepicker.css";
+@import "swiper/swiper-bundle.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

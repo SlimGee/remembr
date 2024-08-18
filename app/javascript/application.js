@@ -9,7 +9,9 @@ window._ = _;
 import "preline";
 import "./controllers";
 
-console.log("Hello World from Webpacker");
+import "swiper/css/bundle";
+
+console.log("Hello from application.js");
 
 document.addEventListener("turbo:load", () => {
   window.HSStaticMethods.autoInit();
