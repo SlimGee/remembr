@@ -7,5 +7,8 @@ import { application } from "./application"
 import DatepickerController from "./datepicker_controller"
 application.register("datepicker", DatepickerController)
 
+import DropzoneController from "./dropzone_controller"
+application.register("dropzone", DropzoneController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)

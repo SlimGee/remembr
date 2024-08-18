@@ -10,7 +10,11 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.5",
-    "air-datepicker": "^3.5.3"
+    "@preline/file-upload": "^2.4.1",
+    "air-datepicker": "^3.5.3",
+    "dropzone": "^6.0.0-beta.2",
+    "lodash": "^4.17.21",
+    "preline": "^2.4.1"
   },
   "packageManager": "yarn@4.4.0"
 }

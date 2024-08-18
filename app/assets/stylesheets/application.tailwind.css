@@ -16,6 +16,14 @@
     @apply rounded border-gray-200;
   }
 
+  select {
+    @apply block border border-gray-300 rounded p-2.5 text-sm w-full;
+  }
+
+  .form-select {
+    @apply block border border-gray-300 rounded p-2.5 text-sm;
+  }
+
   .btn-primary {
     @apply inline-flex items-center px-4 cursor-pointer sm:px-4 py-2.5 sm:py-2.5 bg-blue-600 border border-transparent rounded font-medium text-sm text-white text-center  hover:bg-blue-700 active:bg-blue-900 focus:outline-none focus:shadow-blue-800 hover:bg-blue-900 transition ease-in-out duration-150 disabled:opacity-50 disabled:pointer-events-none;
   }

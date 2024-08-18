@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   resources :notices
+  resources :notices do
+    resource :notice_images, only: %i[new create]
+  end
+
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks"
   }

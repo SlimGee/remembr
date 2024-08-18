@@ -9,4 +9,8 @@ class Notice < ApplicationRecord
   validates :dod, presence: true, comparison: {greater_than: :dob}
   validates :wording, presence: true
   validates :relationship, presence: true
+
+  has_person_name
+
+  has_many_attached :images
 end
