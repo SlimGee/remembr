@@ -14,6 +14,10 @@ class Notice < ApplicationRecord
 
   has_many_attached :images
 
+  ransacker :created_at, type: :date do
+    Arel.sql("date(created_at)")
+  end
+
   def self.ransackable_attributes(auth_object = nil)
     %w[category location platform first_name nickname last_name dob dod wording relationship, created_at]
   end

@@ -2,11 +2,15 @@
 import "@hotwired/turbo-rails";
 import * as _ from "lodash";
 import Dropzone from "dropzone";
+
 window.Dropzone = Dropzone;
 window._ = _;
+
 import "preline";
 import "./controllers";
+
 console.log("Hello World from Webpacker");
+
 document.addEventListener("turbo:load", () => {
   window.HSStaticMethods.autoInit();
 });

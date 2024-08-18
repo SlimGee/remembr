@@ -316,7 +316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@popperjs/core@npm:^2.11.2":
+"@popperjs/core@npm:^2.11.2, @popperjs/core@npm:^2.11.8":
   version: 2.11.8
   resolution: "@popperjs/core@npm:2.11.8"
   checksum: 10c0/4681e682abc006d25eb380d0cf3efc7557043f53b6aea7a5057d0d1e7df849a00e281cd8ea79c902a35a414d7919621fc2ba293ecec05f413598e0b23d5a1e63
@@ -327,6 +327,13 @@ __metadata:
   version: 2.4.1
   resolution: "@preline/file-upload@npm:2.4.1"
   checksum: 10c0/41c38eb5cab83cce7e2619c0542ee9c5198a3f7fe3ac203e09469a94ec2344a816e795d8898df4542d7d65a5c6f19cac03509eb3713f86373f5ab6a4aec65615
+  languageName: node
+  linkType: hard
+
+"@preline/tooltip@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@preline/tooltip@npm:2.4.1"
+  checksum: 10c0/43b9311fa4e77d6d6b5d5e31aba8592322369ba653f30399683ca0610cdf138fa74401ea3d469c6d0a30167b361f038f908cdf8f27d57f9248df240da9811ec4
   languageName: node
   linkType: hard
 
@@ -464,7 +471,9 @@ __metadata:
   dependencies:
     "@hotwired/stimulus": "npm:^3.2.2"
     "@hotwired/turbo-rails": "npm:^8.0.5"
+    "@popperjs/core": "npm:^2.11.8"
     "@preline/file-upload": "npm:^2.4.1"
+    "@preline/tooltip": "npm:^2.4.1"
     "@tailwindcss/container-queries": "npm:^0.1.1"
     "@tailwindcss/forms": "npm:^0.5.7"
     "@tailwindcss/typography": "npm:^0.5.14"

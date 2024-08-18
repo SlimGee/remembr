@@ -1,7 +1,7 @@
 <div>
   <div class="mb-4 w-full">
     <%= search_form_for @q, url: app_path do |f| %>
-      <div class="flex space-x-3 w-full items center">
+      <div class="flex items-baseline space-x-3 w-full">
 
         <div class="flex space-x-3 w-8/12">
           <%= f.search_field :location_cont,
@@ -15,14 +15,19 @@
 
         <div class="flex space-x-2 w-4/12">
 
-          <%= f.search_field :created_at_gt,
+          <%= f.search_field :created_at_gteq,
                          class: "form-input w-1/2",
+                         value: @q.created_at_gteq || Date.current - 1.week,
                          "data-controller": "datepicker" %>
 
-          <%= f.search_field :created_at_lt,
+          <%= f.search_field :created_at_lteq,
                          class: "form-input w-1/2",
                          "data-controller": "datepicker" %>
         </div>
+        <%= link_to app_path, title: 'Reset filteres' do %>
+          <i class="px-0.5 text-sm rounded-full border bi bi-x"></i>
+        <% end %>
+
         <%= f.submit class: "btn-primary" %>
       </div>
     <% end %>

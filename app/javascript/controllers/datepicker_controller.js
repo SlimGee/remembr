@@ -7,7 +7,6 @@ import "air-datepicker/air-datepicker.css";
 // Connects to data-controller="datepicker"
 export default class extends Controller {
   connect() {
-    console.log("datepicker controller connected");
     new AirDatepicker(this.element, {
       selectedDates: [this.element.value || new Date()],
       locale: localeEn,
