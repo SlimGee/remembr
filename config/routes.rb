@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :app do
+    get "/" => "notices#index"
+    resources :notices, only: %i[show]
+  end
   resources :notices
   resources :notices do
     resource :notice_images, only: %i[new create]

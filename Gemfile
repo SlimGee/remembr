@@ -72,3 +72,9 @@ gem "name_of_person", "~> 1.1"
 gem "jsbundling-rails", "~> 1.3"
 
 gem "image_processing", "~> 1.13"
+
+gem "kaminari", "~> 1.2"
+
+gem "ransack", "~> 4.2"
+
+gem "cssbundling-rails", "~> 1.4"

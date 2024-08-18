@@ -6,7 +6,7 @@ window.Dropzone = Dropzone;
 window._ = _;
 import "preline";
 import "./controllers";
-
+console.log("Hello World from Webpacker");
 document.addEventListener("turbo:load", () => {
   window.HSStaticMethods.autoInit();
 });

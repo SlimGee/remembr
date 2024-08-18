@@ -1,0 +1,49 @@
+<div>
+  <div class="mb-4 w-full">
+    <%= search_form_for @q, url: app_path do |f| %>
+      <div class="flex space-x-3 w-full items center">
+
+        <div class="flex space-x-3 w-8/12">
+          <%= f.search_field :location_cont,
+                         class: "form-input w-1/2",
+                         placeholder: "City or town" %>
+
+          <%= f.search_field :first_name_or_last_name_or_nickname_or_wording_or_location_cont,
+                         class: "form-input w-1/2",
+                         placeholder: "Name or keyword" %>
+        </div>
+
+        <div class="flex space-x-2 w-4/12">
+
+          <%= f.search_field :created_at_gt,
+                         class: "form-input w-1/2",
+                         "data-controller": "datepicker" %>
+
+          <%= f.search_field :created_at_lt,
+                         class: "form-input w-1/2",
+                         "data-controller": "datepicker" %>
+        </div>
+        <%= f.submit class: "btn-primary" %>
+      </div>
+    <% end %>
+
+  </div>
+
+  <div class="flex">
+    <div class="w-full md:max-w-3xl">
+      <h2 class="text-2xl font-bold">Search All Announcements</h2>
+      <p class="text-gray-600">
+        The
+        <span class="font-bold">No.1</span>
+        site accross Zimbabwe for funeral notices, where you can search over
+        1000+ notices and tributes.
+      </p>
+
+      <div class="mt-12 space-y-3">
+        <% @notices.each do |notice| %>
+          <%= render notice %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

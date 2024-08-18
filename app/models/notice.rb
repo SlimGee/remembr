@@ -13,4 +13,12 @@ class Notice < ApplicationRecord
   has_person_name
 
   has_many_attached :images
+
+  def self.ransackable_attributes(auth_object = nil)
+    %w[category location platform first_name nickname last_name dob dod wording relationship, created_at]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    []
+  end
 end
