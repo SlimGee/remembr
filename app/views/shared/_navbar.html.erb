@@ -76,6 +76,8 @@
           <div class="flex flex-wrap gap-x-1.5 items-center">
             <% if !user_signed_in? %>
               <%= link_to "Login", new_user_session_path, class: "btn-outline" %>
+            <% else %>
+              <%= link_to "Dashboard", dashboard_root_path, class: "btn-outline" %>
             <% end %>
             <%= link_to "Create Notice", new_notice_path, class: "btn-primary" %>
           </div>

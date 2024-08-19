@@ -4,7 +4,7 @@ class NoticesController < ApplicationController
 
   # GET /notices or /notices.json
   def index
-    @notices = Notice.all
+    @notices = current_user.notices.page(params[:page]).per(6)
   end
 
   # GET /notices/1 or /notices/1.json
@@ -39,7 +39,10 @@ class NoticesController < ApplicationController
   def update
     respond_to do |format|
       if @notice.update(notice_params)
-        format.html { redirect_to notice_url(@notice), notice: "Notice was successfully updated." }
+
+        redirect_path = @notice.images.attached? ? app_notice_path(@notice) : new_notice_notice_images_path(@notice)
+
+        format.html { redirect_to redirect_path, notice: "Notice was successfully updated." }
         format.json { render :show, status: :ok, location: @notice }
       else
         format.html { render :edit, status: :unprocessable_entity }

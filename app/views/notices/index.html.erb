@@ -1,21 +1,31 @@
 <div class="w-full">
   <% if notice.present? %>
-    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <p
+      class="inline-block py-2 px-3 mb-5 font-medium text-green-500 bg-green-50 rounded-lg"
+      id="notice"
+    ><%= notice %></p>
   <% end %>
 
   <% content_for :title, "Notices" %>
 
   <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl">Notices</h1>
-    <%= link_to "New notice", new_notice_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+    <h1 class="text-4xl font-bold">My Notices</h1>
+    <%= link_to "New notice",
+    new_notice_path,
+    class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
   </div>
 
-  <div id="notices" class="min-w-full">
-    <% @notices.each do |notice| %>
-      <%= render notice %>
-      <p>
-        <%= link_to "Show this notice", notice, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-      </p>
-    <% end %>
+  <div id="notices" class="max-w-3xl">
+    <div class="mt-12 space-y-3">
+
+      <% @notices.each do |notice| %>
+        <%= render notice %>
+      <% end %>
+    </div>
+
+    <div class="mt-12">
+      <%= paginate @notices %>
+    </div>
+
   </div>
 </div>

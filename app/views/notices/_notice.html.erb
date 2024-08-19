@@ -1,57 +1,47 @@
-<div id="<%= dom_id notice %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Category:</strong>
-    <%= notice.category %>
-  </p>
+<%= link_to edit_notice_path(notice), class: 'flex flex-col items-center bg-white rounded border border-gray-200 md:flex-row dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700' do %>
+  <div class="p-2">
+    <% if notice.images.attached? %>
+      <%= image_tag notice.images.first,
+      class: "object-cover w-full h-48 rounded-lg aspect-square md:h-36" %>
+    <% else %>
+      <%= image_tag "notice_2.jpg",
+      class: "object-cover w-full h-48 rounded-lg aspect-square md:h-36" %>
+    <% end %>
+  </div>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Location:</strong>
-    <%= notice.location %>
-  </p>
+  <div class="flex flex-col justify-between p-4 leading-normal">
+    <h5
+      class="mb-2 text-lg font-normal tracking-tight text-gray-800 md:text-xl dark:text-white"
+    >
+      <%= notice.first_name %>
+      <% if notice.nickname.present? %>
+        (<%= notice.nickname %>)
+      <% end %>
+      <%= notice.last_name %>
+    </h5>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Platform:</strong>
-    <%= notice.platform %>
-  </p>
+    <div class="flex">
+      <span
+        class="py-0.5 px-2.5 text-sm font-medium text-blue-800 bg-blue-100 rounded dark:text-blue-300 dark:bg-blue-900 me-2"
+      >
+        Death Notice
+      </span>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">First name:</strong>
-    <%= notice.first_name %>
-  </p>
+      <div>
+        <span class="text-sm font-medium text-gray-500 dark:text-gray-400">
+          <i class="bi bi-geo-alt-fill"></i>
+          <%= notice.location %>
+        </span>
+      </div>
+    </div>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Last name:</strong>
-    <%= notice.last_name %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Dob:</strong>
-    <%= notice.dob %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Dod:</strong>
-    <%= notice.dod %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Nickname:</strong>
-    <%= notice.nickname %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Wording:</strong>
-    <%= notice.wording %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Relationship:</strong>
-    <%= notice.relationship %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Published at:</strong>
-    <%= notice.published_at %>
-  </p>
-
-</div>
+    <div class="flex items-center mt-3 space-x-3">
+      <span class="p-1 px-3 space-x-3 rounded-full border">
+        <span class="text-sm font-medium text-gray-500 dark:text-gray-400">
+          <i class="bi bi-clock"></i>
+          <%= notice.created_at.strftime("%B %d, %Y") %>
+        </span>
+      </span>
+    </div>
+  </div>
+<% end %>
