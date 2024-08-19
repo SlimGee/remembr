@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :dashboard do
+    root "home#index"
+  end
   namespace :app do
     get "/" => "notices#index"
     resources :notices, only: %i[show]
