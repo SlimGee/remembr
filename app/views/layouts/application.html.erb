@@ -18,6 +18,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application.tailwind", "data-turbo-track": "reload" %>
+
     <%= javascript_include_tag "application",
     "data-turbo-track": "reload",
     type: "module" %>
@@ -29,7 +31,8 @@
     <main class="container py-8 px-5 mx-auto md:py-8 lg:px-8 max-w-[85rem]">
       <%= render "shared/notifications" %>
       <%= yield %>
-      <%= render "shared/footer" %>
     </main>
+
+    <%= render "shared/footer" %>
   </body>
 </html>

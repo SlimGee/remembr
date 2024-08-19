@@ -32,8 +32,7 @@
             <% if @notice.images.attached? %>
               <% @notice.images.each do |image| %>
                 <div class="swiper-slide">
-                  <%= image_tag image,
-                  class: "object-cover w-full h-96 rounded-lg aspect-square md:h-96" %>
+                  <%= image_tag image, class: " w-full h-auto object-contain rounded-lg  md:h-auto" %>
                 </div>
               <% end %>
             <% else %>

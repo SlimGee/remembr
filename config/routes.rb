@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     resource :notice_images, only: %i[new create]
   end
 
+  delete "attachments/:id" => "attachments#destroy", :as => :destroy_attachment
+
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks"
   }

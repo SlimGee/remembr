@@ -20,33 +20,27 @@
       </p>
     </div>
   </div>
-
-  <div id="hs-file-upload" data-controller="dropzone" data-hs-file-upload='{
-  "url": "<%= notice_notice_images_path(@notice) %>",
-  "headers": {
-   "X-CSRF-Token": "<%= form_authenticity_token %>"
-    },
-    "paramName": "notice_image[image]",
-    "uploadMultiple": true,
-    "autoProcessQueue": false,
-     "parallelUploads": 5,
-      "maxFiles": 5,
-  "extensions": {
-    "default": {
-      "class": "shrink-0 size-5"
-    },
-    "xls": {
-      "class": "shrink-0 size-5"
-    },
-    "zip": {
-      "class": "shrink-0 size-5"
-    },
-    "csv": {
-      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4\"/><path d=\"M14 2v4a2 2 0 0 0 2 2h4\"/><path d=\"m5 12-3 3 3 3\"/><path d=\"m9 18 3-3-3-3\"/></svg>",
-      "class": "shrink-0 size-5"
+  <%= content_tag :div, data: {
+    controller: 'dropzone',
+    'dropzone-purge-url-value': destroy_attachment_url("__ID__"),
+    'hs-file-upload': {
+      url: notice_notice_images_path(@notice),
+      headers: {
+        'X-CSRF-Token': form_authenticity_token
+      },
+      paramName: 'notice_image[image]',
+      uploadMultiple: false,
+      autoProcessQueue: true,
+      parallelUploads: 5,
+      maxFiles: 5,
+      extensions: {
+        default: {
+          class: 'shrink-0 size-5'
+        },
+      }
     }
-  }
-}'>
+  } do %>
+
     <template data-hs-file-upload-preview="">
       <div
         class="p-3 bg-white rounded-xl border border-gray-300 border-solid dark:bg-neutral-800 dark:border-neutral-600"
@@ -200,10 +194,18 @@
     <div class="mt-4 space-y-3 empty:mt-0" data-hs-file-upload-previews=""></div>
 
     <div class="mt-4">
-      <button type="button" class="hidden btn btn-primary" data-dropzone-target="process" data-action="click->dropzone#process">Upload</button>
-      <%= link_to  'Continue', edit_notice_path(@notice),class: 'btn-primary hidden', data: {
-        'dropzone-target': 'continue'
+      <button
+        type="button"
+        class="hidden btn btn-primary"
+        data-dropzone-target="process"
+        data-action="click->dropzone#process"
+      >Upload</button>
+      <%= link_to "Continue",
+      edit_notice_path(@notice),
+      class: "btn-primary hidden",
+      data: {
+        "dropzone-target": "continue",
       } %>
     </div>
-  </div>
+  <% end %>
 </div>

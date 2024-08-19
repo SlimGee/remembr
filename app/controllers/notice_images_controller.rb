@@ -4,10 +4,11 @@ class NoticeImagesController < ApplicationController
   end
 
   def create
-    attachment = @notice.images.attach(notice_image_params[:image])
-    puts(attachment)
-    if attachment
-      render json: @notice
+    @notice.images.attach(notice_image_params[:image])
+    if @notice.images.attached?
+      render json: @notice.images.last
+    else
+      render json: @notice.images.errors.full_messages, status: :unprocessable_entity
     end
   end
 
