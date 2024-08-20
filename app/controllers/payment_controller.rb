@@ -29,7 +29,7 @@ class PaymentController < ApplicationController
       Rails.application.credentials.pesepay_integration_key,
       Rails.application.credentials.pesepay_encryption_key
     )
-    pesepay.result_url = "https://1e62-102-128-79-94.ngrok-free.app#{payments_callback_path}"
+    pesepay.result_url = payments_callback_url
     pesepay.return_url = return_url
 
     pesepay
