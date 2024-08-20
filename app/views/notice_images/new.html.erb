@@ -200,14 +200,23 @@
         data-dropzone-target="process"
         data-action="click->dropzone#process"
       >Upload</button>
+      <% if @notice.payment_successful? %>
+        <%= link_to "Continue",
+        notices_path,
+        class: "btn-primary hidden",
+        data: {
+          "dropzone-target": "continue",
+        } %>
+      <% else %>
+        <%= button_to "Continue to payement",
+        notice_payment_path(@notice),
+        class: "btn-primary hidden",
+        data: {
+          "dropzone-target": "continue",
+          turbo: false,
+        } %>
 
-      <%= button_to "Continue to payement",
-      notice_payment_path(@notice),
-      class: "btn-primary hidden",
-      data: {
-        "dropzone-target": "continue",
-        turbo: false,
-      } %>
+      <% end %>
     </div>
   <% end %>
 </div>
