@@ -33,6 +33,7 @@ const RAW_RUNTIME_STATE =
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
           ["@preline/tooltip", "npm:2.4.1"],\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
           ["@rails/request.js", "npm:0.0.9"],\
           ["@stimulus-components/carousel", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:6.0.0"],\
           ["@tailwindcss/container-queries", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.1.1"],\
@@ -40,13 +41,15 @@ const RAW_RUNTIME_STATE =
           ["@tailwindcss/typography", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.14"],\
           ["air-datepicker", "npm:3.5.3"],\
           ["autoprefixer", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.4.20"],\
+          ["ckeditor5", "npm:43.0.0"],\
           ["dropzone", "npm:6.0.0-beta.2"],\
           ["esbuild", "npm:0.23.1"],\
           ["lodash", "npm:4.17.21"],\
           ["postcss", "npm:8.4.41"],\
           ["preline", "npm:2.4.1"],\
           ["swiper", "npm:11.1.9"],\
-          ["tailwindcss", "npm:3.4.10"]\
+          ["tailwindcss", "npm:3.4.10"],\
+          ["trix", "npm:2.1.5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -56,6 +59,803 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@alloc-quick-lru-npm-5.2.0-eb83517088-10c0.zip/node_modules/@alloc/quick-lru/",\
         "packageDependencies": [\
           ["@alloc/quick-lru", "npm:5.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-adapter-ckfinder", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-adapter-ckfinder-npm-43.0.0-dd72245cff-10c0.zip/node_modules/@ckeditor/ckeditor5-adapter-ckfinder/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-adapter-ckfinder", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-upload", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-alignment", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-alignment-npm-43.0.0-6f14cb6acd-10c0.zip/node_modules/@ckeditor/ckeditor5-alignment/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-alignment", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-autoformat", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-autoformat-npm-43.0.0-906ee12bfa-10c0.zip/node_modules/@ckeditor/ckeditor5-autoformat/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-autoformat", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-autosave", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-autosave-npm-43.0.0-c4303fc647-10c0.zip/node_modules/@ckeditor/ckeditor5-autosave/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-autosave", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-basic-styles", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-basic-styles-npm-43.0.0-1464e1b45c-10c0.zip/node_modules/@ckeditor/ckeditor5-basic-styles/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-basic-styles", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-block-quote", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-block-quote-npm-43.0.0-617110e8cc-10c0.zip/node_modules/@ckeditor/ckeditor5-block-quote/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-block-quote", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-ckbox", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-ckbox-npm-43.0.0-908dab5090-10c0.zip/node_modules/@ckeditor/ckeditor5-ckbox/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-ckbox", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-upload", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["blurhash", "npm:2.0.5"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-ckfinder", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-ckfinder-npm-43.0.0-70ffa5a6f7-10c0.zip/node_modules/@ckeditor/ckeditor5-ckfinder/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-ckfinder", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-clipboard", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-clipboard-npm-43.0.0-e7191d8d25-10c0.zip/node_modules/@ckeditor/ckeditor5-clipboard/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-cloud-services", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-cloud-services-npm-43.0.0-e0eff24893-10c0.zip/node_modules/@ckeditor/ckeditor5-cloud-services/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-cloud-services", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-code-block", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-code-block-npm-43.0.0-3d266f1907-10c0.zip/node_modules/@ckeditor/ckeditor5-code-block/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-code-block", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-core", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-core-npm-43.0.0-897cdc6b16-10c0.zip/node_modules/@ckeditor/ckeditor5-core/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-watchdog", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-easy-image", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-easy-image-npm-43.0.0-f7c262aa56-10c0.zip/node_modules/@ckeditor/ckeditor5-easy-image/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-easy-image", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-upload", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-editor-balloon", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-editor-balloon-npm-43.0.0-b387768aa4-10c0.zip/node_modules/@ckeditor/ckeditor5-editor-balloon/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-editor-balloon", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-editor-classic", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-editor-classic-npm-43.0.0-52c732765a-10c0.zip/node_modules/@ckeditor/ckeditor5-editor-classic/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-editor-classic", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-editor-decoupled", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-editor-decoupled-npm-43.0.0-7ac99606c3-10c0.zip/node_modules/@ckeditor/ckeditor5-editor-decoupled/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-editor-decoupled", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-editor-inline", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-editor-inline-npm-43.0.0-36ded3a895-10c0.zip/node_modules/@ckeditor/ckeditor5-editor-inline/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-editor-inline", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-editor-multi-root", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-editor-multi-root-npm-43.0.0-a6b2694e06-10c0.zip/node_modules/@ckeditor/ckeditor5-editor-multi-root/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-editor-multi-root", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-engine", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-engine-npm-43.0.0-0a11184674-10c0.zip/node_modules/@ckeditor/ckeditor5-engine/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-enter", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-enter-npm-43.0.0-1f97906402-10c0.zip/node_modules/@ckeditor/ckeditor5-enter/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-essentials", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-essentials-npm-43.0.0-0b0160bdc7-10c0.zip/node_modules/@ckeditor/ckeditor5-essentials/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-essentials", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-select-all", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-undo", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-find-and-replace", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-find-and-replace-npm-43.0.0-85f9e93f78-10c0.zip/node_modules/@ckeditor/ckeditor5-find-and-replace/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-find-and-replace", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-font", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-font-npm-43.0.0-edb8d8ab27-10c0.zip/node_modules/@ckeditor/ckeditor5-font/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-font", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-heading", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-heading-npm-43.0.0-8b1d462cd5-10c0.zip/node_modules/@ckeditor/ckeditor5-heading/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-heading", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-paragraph", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-highlight", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-highlight-npm-43.0.0-617b63f806-10c0.zip/node_modules/@ckeditor/ckeditor5-highlight/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-highlight", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-horizontal-line", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-horizontal-line-npm-43.0.0-55923039fe-10c0.zip/node_modules/@ckeditor/ckeditor5-horizontal-line/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-horizontal-line", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-html-embed", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-html-embed-npm-43.0.0-65befdf267-10c0.zip/node_modules/@ckeditor/ckeditor5-html-embed/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-html-embed", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-html-support", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-html-support-npm-43.0.0-c31a89f127-10c0.zip/node_modules/@ckeditor/ckeditor5-html-support/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-html-support", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-image", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-image-npm-43.0.0-4b811b9c66-10c0.zip/node_modules/@ckeditor/ckeditor5-image/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-image", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-undo", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-upload", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-indent", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-indent-npm-43.0.0-ae46384113-10c0.zip/node_modules/@ckeditor/ckeditor5-indent/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-indent", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-language", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-language-npm-43.0.0-30b305ae9e-10c0.zip/node_modules/@ckeditor/ckeditor5-language/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-language", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-link", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-link-npm-43.0.0-a3e9266072-10c0.zip/node_modules/@ckeditor/ckeditor5-link/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-link", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-list", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-list-npm-43.0.0-6a55258db9-10c0.zip/node_modules/@ckeditor/ckeditor5-list/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-list", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-markdown-gfm", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-markdown-gfm-npm-43.0.0-d075d68d85-10c0.zip/node_modules/@ckeditor/ckeditor5-markdown-gfm/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-markdown-gfm", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["marked", "npm:4.0.12"],\
+          ["turndown", "npm:7.2.0"],\
+          ["turndown-plugin-gfm", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-media-embed", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-media-embed-npm-43.0.0-5f7ae23767-10c0.zip/node_modules/@ckeditor/ckeditor5-media-embed/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-media-embed", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-undo", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-mention", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-mention-npm-43.0.0-3e9686d6c3-10c0.zip/node_modules/@ckeditor/ckeditor5-mention/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-mention", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-minimap", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-minimap-npm-43.0.0-87d8f5532f-10c0.zip/node_modules/@ckeditor/ckeditor5-minimap/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-minimap", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-page-break", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-page-break-npm-43.0.0-9d89eb06a5-10c0.zip/node_modules/@ckeditor/ckeditor5-page-break/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-page-break", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-paragraph", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-paragraph-npm-43.0.0-fba1f7b738-10c0.zip/node_modules/@ckeditor/ckeditor5-paragraph/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-paragraph", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-paste-from-office", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-paste-from-office-npm-43.0.0-e3cd242957-10c0.zip/node_modules/@ckeditor/ckeditor5-paste-from-office/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-paste-from-office", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-remove-format", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-remove-format-npm-43.0.0-d3f2a860b2-10c0.zip/node_modules/@ckeditor/ckeditor5-remove-format/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-remove-format", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-restricted-editing", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-restricted-editing-npm-43.0.0-ab4a423b8f-10c0.zip/node_modules/@ckeditor/ckeditor5-restricted-editing/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-restricted-editing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-select-all", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-select-all-npm-43.0.0-68fc1571ce-10c0.zip/node_modules/@ckeditor/ckeditor5-select-all/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-select-all", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-show-blocks", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-show-blocks-npm-43.0.0-ea3ac81c9c-10c0.zip/node_modules/@ckeditor/ckeditor5-show-blocks/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-show-blocks", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-source-editing", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-source-editing-npm-43.0.0-27078dbfaa-10c0.zip/node_modules/@ckeditor/ckeditor5-source-editing/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-source-editing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-theme-lark", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-special-characters", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-special-characters-npm-43.0.0-9b53934205-10c0.zip/node_modules/@ckeditor/ckeditor5-special-characters/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-special-characters", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-style", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-style-npm-43.0.0-a3276690bc-10c0.zip/node_modules/@ckeditor/ckeditor5-style/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-style", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-table", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-table-npm-43.0.0-66a85d25e7-10c0.zip/node_modules/@ckeditor/ckeditor5-table/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-table", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-theme-lark", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-theme-lark-npm-43.0.0-5c5fecc7ca-10c0.zip/node_modules/@ckeditor/ckeditor5-theme-lark/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-theme-lark", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-typing", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-typing-npm-43.0.0-b84a7f2855-10c0.zip/node_modules/@ckeditor/ckeditor5-typing/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-ui", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-ui-npm-43.0.0-b6f9cbca5a-10c0.zip/node_modules/@ckeditor/ckeditor5-ui/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["color-convert", "npm:2.0.1"],\
+          ["color-parse", "npm:1.4.2"],\
+          ["lodash-es", "npm:4.17.21"],\
+          ["vanilla-colorful", "npm:0.7.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-undo", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-undo-npm-43.0.0-f62e2c6db0-10c0.zip/node_modules/@ckeditor/ckeditor5-undo/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-undo", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-upload", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-upload-npm-43.0.0-683dfa7193-10c0.zip/node_modules/@ckeditor/ckeditor5-upload/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-upload", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-utils", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-utils-npm-43.0.0-031ce5fc48-10c0.zip/node_modules/@ckeditor/ckeditor5-utils/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-watchdog", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-watchdog-npm-43.0.0-69adfd94b1-10c0.zip/node_modules/@ckeditor/ckeditor5-watchdog/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-watchdog", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-widget", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-widget-npm-43.0.0-e2d66f683d-10c0.zip/node_modules/@ckeditor/ckeditor5-widget/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@ckeditor/ckeditor5-word-count", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@ckeditor-ckeditor5-word-count-npm-43.0.0-bd080c901e-10c0.zip/node_modules/@ckeditor/ckeditor5-word-count/",\
+        "packageDependencies": [\
+          ["@ckeditor/ckeditor5-word-count", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["lodash-es", "npm:4.17.21"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -379,6 +1179,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@mixmark-io/domino", [\
+      ["npm:2.2.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@mixmark-io-domino-npm-2.2.0-4e1d58551b-10c0.zip/node_modules/@mixmark-io/domino/",\
+        "packageDependencies": [\
+          ["@mixmark-io/domino", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@nodelib/fs.scandir", [\
       ["npm:2.1.5", {\
         "packageLocation": "../../../.yarn/berry/cache/@nodelib-fs.scandir-npm-2.1.5-89c67370dd-10c0.zip/node_modules/@nodelib/fs.scandir/",\
@@ -484,6 +1293,39 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@rails-actioncable-npm-7.2.0-daa1754c1b-10c0.zip/node_modules/@rails/actioncable/",\
         "packageDependencies": [\
           ["@rails/actioncable", "npm:7.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@rails/actiontext", [\
+      ["npm:7.2.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-actiontext-npm-7.2.0-3655d6ebe7-10c0.zip/node_modules/@rails/actiontext/",\
+        "packageDependencies": [\
+          ["@rails/actiontext", "npm:7.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/@rails-actiontext-virtual-3c21c0e3cc/4/.yarn/berry/cache/@rails-actiontext-npm-7.2.0-3655d6ebe7-10c0.zip/node_modules/@rails/actiontext/",\
+        "packageDependencies": [\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
+          ["@rails/activestorage", "npm:7.2.0"],\
+          ["@types/trix", null],\
+          ["trix", "npm:2.1.5"]\
+        ],\
+        "packagePeers": [\
+          "@types/trix",\
+          "trix"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@rails/activestorage", [\
+      ["npm:7.2.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-activestorage-npm-7.2.0-5fdd8c2323-10c0.zip/node_modules/@rails/activestorage/",\
+        "packageDependencies": [\
+          ["@rails/activestorage", "npm:7.2.0"],\
+          ["spark-md5", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -703,6 +1545,7 @@ const RAW_RUNTIME_STATE =
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
           ["@preline/tooltip", "npm:2.4.1"],\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
           ["@rails/request.js", "npm:0.0.9"],\
           ["@stimulus-components/carousel", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:6.0.0"],\
           ["@tailwindcss/container-queries", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.1.1"],\
@@ -710,13 +1553,15 @@ const RAW_RUNTIME_STATE =
           ["@tailwindcss/typography", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.14"],\
           ["air-datepicker", "npm:3.5.3"],\
           ["autoprefixer", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.4.20"],\
+          ["ckeditor5", "npm:43.0.0"],\
           ["dropzone", "npm:6.0.0-beta.2"],\
           ["esbuild", "npm:0.23.1"],\
           ["lodash", "npm:4.17.21"],\
           ["postcss", "npm:8.4.41"],\
           ["preline", "npm:2.4.1"],\
           ["swiper", "npm:11.1.9"],\
-          ["tailwindcss", "npm:3.4.10"]\
+          ["tailwindcss", "npm:3.4.10"],\
+          ["trix", "npm:2.1.5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -772,6 +1617,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/binary-extensions-npm-2.3.0-bd3f20d865-10c0.zip/node_modules/binary-extensions/",\
         "packageDependencies": [\
           ["binary-extensions", "npm:2.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["blurhash", [\
+      ["npm:2.0.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/blurhash-npm-2.0.5-7648719b71-10c0.zip/node_modules/blurhash/",\
+        "packageDependencies": [\
+          ["blurhash", "npm:2.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -874,6 +1728,72 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ckeditor5", [\
+      ["npm:43.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/ckeditor5-npm-43.0.0-c951289b3e-10c0.zip/node_modules/ckeditor5/",\
+        "packageDependencies": [\
+          ["ckeditor5", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-adapter-ckfinder", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-alignment", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-autoformat", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-autosave", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-basic-styles", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-block-quote", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ckbox", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ckfinder", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-clipboard", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-cloud-services", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-code-block", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-core", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-easy-image", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-editor-balloon", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-editor-classic", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-editor-decoupled", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-editor-inline", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-editor-multi-root", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-engine", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-enter", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-essentials", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-find-and-replace", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-font", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-heading", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-highlight", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-horizontal-line", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-html-embed", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-html-support", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-image", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-indent", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-language", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-link", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-list", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-markdown-gfm", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-media-embed", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-mention", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-minimap", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-page-break", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-paragraph", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-paste-from-office", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-remove-format", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-restricted-editing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-select-all", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-show-blocks", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-source-editing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-special-characters", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-style", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-table", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-theme-lark", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-typing", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-ui", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-undo", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-upload", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-utils", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-watchdog", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-widget", "npm:43.0.0"],\
+          ["@ckeditor/ckeditor5-word-count", "npm:43.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["clean-stack", [\
       ["npm:2.2.0", {\
         "packageLocation": "../../../.yarn/berry/cache/clean-stack-npm-2.2.0-a8ce435a5c-10c0.zip/node_modules/clean-stack/",\
@@ -897,6 +1817,16 @@ const RAW_RUNTIME_STATE =
       ["npm:1.1.4", {\
         "packageLocation": "../../../.yarn/berry/cache/color-name-npm-1.1.4-025792b0ea-10c0.zip/node_modules/color-name/",\
         "packageDependencies": [\
+          ["color-name", "npm:1.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["color-parse", [\
+      ["npm:1.4.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/color-parse-npm-1.4.2-bd4a4dff72-10c0.zip/node_modules/color-parse/",\
+        "packageDependencies": [\
+          ["color-parse", "npm:1.4.2"],\
           ["color-name", "npm:1.1.4"]\
         ],\
         "linkType": "HARD"\
@@ -1464,6 +2394,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lodash-es", [\
+      ["npm:4.17.21", {\
+        "packageLocation": "../../../.yarn/berry/cache/lodash-es-npm-4.17.21-b45832dfce-10c0.zip/node_modules/lodash-es/",\
+        "packageDependencies": [\
+          ["lodash-es", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lodash.castarray", [\
       ["npm:4.4.0", {\
         "packageLocation": "../../../.yarn/berry/cache/lodash.castarray-npm-4.4.0-f3706198e9-10c0.zip/node_modules/lodash.castarray/",\
@@ -1517,6 +2456,15 @@ const RAW_RUNTIME_STATE =
           ["proc-log", "npm:4.2.0"],\
           ["promise-retry", "npm:2.0.1"],\
           ["ssri", "npm:10.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["marked", [\
+      ["npm:4.0.12", {\
+        "packageLocation": "../../../.yarn/berry/cache/marked-npm-4.0.12-1fc6e0ed31-10c0.zip/node_modules/marked/",\
+        "packageDependencies": [\
+          ["marked", "npm:4.0.12"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2180,6 +3128,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["spark-md5", [\
+      ["npm:3.0.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/spark-md5-npm-3.0.2-1983a5b179-10c0.zip/node_modules/spark-md5/",\
+        "packageDependencies": [\
+          ["spark-md5", "npm:3.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["sprintf-js", [\
       ["npm:1.1.3", {\
         "packageLocation": "../../../.yarn/berry/cache/sprintf-js-npm-1.1.3-b99efd75b2-10c0.zip/node_modules/sprintf-js/",\
@@ -2349,11 +3306,39 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["trix", [\
+      ["npm:2.1.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/trix-npm-2.1.5-e20c6146e3-10c0.zip/node_modules/trix/",\
+        "packageDependencies": [\
+          ["trix", "npm:2.1.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ts-interface-checker", [\
       ["npm:0.1.13", {\
         "packageLocation": "../../../.yarn/berry/cache/ts-interface-checker-npm-0.1.13-0c7b064494-10c0.zip/node_modules/ts-interface-checker/",\
         "packageDependencies": [\
           ["ts-interface-checker", "npm:0.1.13"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["turndown", [\
+      ["npm:7.2.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/turndown-npm-7.2.0-35c69df4d5-10c0.zip/node_modules/turndown/",\
+        "packageDependencies": [\
+          ["turndown", "npm:7.2.0"],\
+          ["@mixmark-io/domino", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["turndown-plugin-gfm", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/turndown-plugin-gfm-npm-1.0.2-73465b88af-10c0.zip/node_modules/turndown-plugin-gfm/",\
+        "packageDependencies": [\
+          ["turndown-plugin-gfm", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2407,6 +3392,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/util-deprecate-npm-1.0.2-e3fe1a219c-10c0.zip/node_modules/util-deprecate/",\
         "packageDependencies": [\
           ["util-deprecate", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vanilla-colorful", [\
+      ["npm:0.7.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/vanilla-colorful-npm-0.7.2-e7027ae79f-10c0.zip/node_modules/vanilla-colorful/",\
+        "packageDependencies": [\
+          ["vanilla-colorful", "npm:0.7.2"]\
         ],\
         "linkType": "HARD"\
       }]\

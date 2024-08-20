@@ -55,7 +55,12 @@
 
   <div class="my-5">
     <%= form.label :wording %>
-    <%= form.text_area :wording, rows: 4, class: "form-input mt-2 w-full" %>
+    <div class="mb-2 text-sm text-gray-500">Please write a short message about the deceased, this will be displayed
+      on the notice</div>
+    <%= form.text_area :wording,
+                   rows: 4,
+                   class: "form-input mt-2 w-full",
+                   "data-controller": "ckeditor" %>
   </div>
 
   <div class="my-5">

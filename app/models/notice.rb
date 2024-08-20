@@ -5,6 +5,7 @@ class Notice < ApplicationRecord
   belongs_to :user, dependent: :destroy
   has_many_attached :images
   has_many :payment_intents, as: :payable, class_name: "Payment::Intent"
+  has_rich_text :content
 
   validates :category, presence: true
   validates :location, presence: true

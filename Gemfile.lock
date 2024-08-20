@@ -441,7 +441,7 @@ DEPENDENCIES
   devise (~> 4.9)
   erb (~> 4.0)
   friendly_id (~> 5.5)
-  image_processing (~> 1.13)
+  image_processing (~> 1.2)
   importmap-rails
   jbuilder
   jsbundling-rails (~> 1.3)

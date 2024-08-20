@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import CkeditorController from "./ckeditor_controller"
+application.register("ckeditor", CkeditorController)
+
 import DatepickerController from "./datepicker_controller"
 application.register("datepicker", DatepickerController)
 
