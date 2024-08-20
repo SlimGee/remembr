@@ -1084,6 +1084,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@preline/select@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@preline/select@npm:2.4.1"
+  checksum: 10c0/34c9653f6051252e8831fc2edb335fb9bb1fa708920cec0a42498376161e7620e89659c52a13193f53cfca836e6eaec3501923033d4a45bae719222d433a1201
+  languageName: node
+  linkType: hard
+
 "@preline/tooltip@npm:^2.4.1":
   version: 2.4.1
   resolution: "@preline/tooltip@npm:2.4.1"
@@ -1266,6 +1273,7 @@ __metadata:
     "@popperjs/core": "npm:^2.11.8"
     "@preline/file-upload": "npm:^2.4.1"
     "@preline/remove-element": "npm:^2.4.1"
+    "@preline/select": "npm:^2.4.1"
     "@preline/tooltip": "npm:^2.4.1"
     "@rails/actiontext": "npm:^7.2.0"
     "@rails/request.js": "npm:^0.0.9"

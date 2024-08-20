@@ -32,6 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@popperjs/core", "npm:2.11.8"],\
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
+          ["@preline/select", "npm:2.4.1"],\
           ["@preline/tooltip", "npm:2.4.1"],\
           ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
           ["@rails/request.js", "npm:0.0.9"],\
@@ -1279,6 +1280,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@preline/select", [\
+      ["npm:2.4.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@preline-select-npm-2.4.1-0bcb2fc0d9-10c0.zip/node_modules/@preline/select/",\
+        "packageDependencies": [\
+          ["@preline/select", "npm:2.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@preline/tooltip", [\
       ["npm:2.4.1", {\
         "packageLocation": "../../../.yarn/berry/cache/@preline-tooltip-npm-2.4.1-a696f5a64c-10c0.zip/node_modules/@preline/tooltip/",\
@@ -1544,6 +1554,7 @@ const RAW_RUNTIME_STATE =
           ["@popperjs/core", "npm:2.11.8"],\
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
+          ["@preline/select", "npm:2.4.1"],\
           ["@preline/tooltip", "npm:2.4.1"],\
           ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
           ["@rails/request.js", "npm:0.0.9"],\
