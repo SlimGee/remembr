@@ -1,7 +1,6 @@
 class Notice < ApplicationRecord
   has_person_name
-
-  belongs_to :user
+  belongs_to :user, dependent: :destroy
   has_many_attached :images
   has_many :payment_intents, as: :payable, class_name: "Payment::Intent"
 

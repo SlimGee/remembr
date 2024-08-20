@@ -1,0 +1,29 @@
+[Unit]
+Description=sidekiq
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Environment="PATH=/home/given/.rbenv/shims:/home/given/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+WorkingDirectory=<APP_PATH>
+ExecStart=<APP_PATH>/current/bin/bundle exec sidekiq -e production -C config/sidekiq.yml
+ExecReload=/usr/bin/kill -TSTP $MAINPID
+
+#User=given
+#Group=given
+
+
+# if we crash, restart
+RestartSec=1
+Restart=on-failure
+#Restart=always
+
+# output goes to /var/log/syslog
+StandardOutput=syslog
+StandardError=syslog
+
+# This will default to "bundler" if we don't specify it
+SyslogIdentifier=sidekiq
+
+[Install]
+WantedBy=multi-user.target
