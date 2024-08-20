@@ -14,7 +14,7 @@ description:
   image:
     (
       if @notice.images.attached?
-        url_for(@notice.images.first)
+        polymorphic_url(@notice.images.first)
       else
         image_url("notice_2.jpg")
       end
@@ -33,7 +33,7 @@ description:
   image:
     (
       if @notice.images.attached?
-        url_for(@notice.images.first)
+        polymorphic_url(@notice.images.first)
       else
         image_url("notice_2.jpg")
       end
