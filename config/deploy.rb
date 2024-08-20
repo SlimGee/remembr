@@ -11,6 +11,8 @@ set(:branch, "main")
 
 set(:user, "given")
 set(:shared_dirs, fetch(:shared_dirs, []).push("tmp/sockets", "tmp/pids", "log"))
+# add storage to shared dirs
+set(:shared_dirs, fetch(:shared_dirs, []).push("storage"))
 set(:shared_files, fetch(:shared_files, []).push("config/credentials/production.key"))
 
 task(:remote_environment) do
