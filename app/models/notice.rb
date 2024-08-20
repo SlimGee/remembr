@@ -1,4 +1,6 @@
 class Notice < ApplicationRecord
+  extend FriendlyId
+  friendly_id :name, use: :slugged
   has_person_name
   belongs_to :user, dependent: :destroy
   has_many_attached :images
@@ -15,6 +17,10 @@ class Notice < ApplicationRecord
   validates :relationship, presence: true
 
   scope :published, -> { where.not(published_at: nil) }
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 
   ransacker :created_at, type: :date do
     Arel.sql("date(created_at)")

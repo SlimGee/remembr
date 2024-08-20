@@ -21,7 +21,7 @@ class PaymentController < ApplicationController
   private
 
   def set_notice
-    @notice = Notice.find(params[:notice_id])
+    @notice = Notice.friendly.find(params[:notice_id])
   end
 
   def initialize_pesepay(return_url)
