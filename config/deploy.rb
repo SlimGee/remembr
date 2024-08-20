@@ -46,8 +46,8 @@ task(:deploy) do
         command("touch tmp/restart.txt")
         command("systemctl --user restart #{fetch(:application_name)}-sidekiq.service")
         # command("bundle binstubs puma")
-        # invoke(:"puma:restart")
-        # invoke(:"sidekiq:restart")
+        invoke(:"puma:restart")
+        invoke(:"sidekiq:restart")
       end
     end
   end
