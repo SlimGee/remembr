@@ -7,5 +7,6 @@ class App::NoticesController < ApplicationController
 
   def show
     @notice = Notice.find(params[:id])
+    raise ActiveRecord::RecordNotFound unless @notice.published?
   end
 end

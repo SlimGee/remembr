@@ -27,4 +27,8 @@ class Notice < ApplicationRecord
   def self.ransackable_associations(auth_object = nil)
     []
   end
+
+  def published?
+    published_at.present?
+  end
 end
