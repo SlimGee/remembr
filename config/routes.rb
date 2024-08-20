@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :payments do
+    post "callback" => "callback#create"
+  end
   namespace :dashboard do
     root "home#index"
   end
@@ -9,6 +12,7 @@ Rails.application.routes.draw do
   resources :notices
   resources :notices do
     resource :notice_images, only: %i[new create]
+    post "payment" => "payment#create"
   end
 
   delete "attachments/:id" => "attachments#destroy", :as => :destroy_attachment

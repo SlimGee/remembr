@@ -30,6 +30,7 @@
     "@hotwired/turbo-rails": "^8.0.5",
     "@popperjs/core": "^2.11.8",
     "@preline/file-upload": "^2.4.1",
+    "@preline/remove-element": "^2.4.1",
     "@preline/tooltip": "^2.4.1",
     "@rails/request.js": "^0.0.9",
     "@stimulus-components/carousel": "^6.0.0",

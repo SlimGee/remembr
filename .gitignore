@@ -48,3 +48,5 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+/config/credentials/production.key

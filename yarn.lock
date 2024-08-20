@@ -330,6 +330,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@preline/remove-element@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@preline/remove-element@npm:2.4.1"
+  checksum: 10c0/d063b0a83728f921eb5d7dbc411f9a488c358d3ab71c2b65f8457f00d154b41e2d828646b34ef58bee01011722a8de3230d360006258170dc65282cfed95094a
+  languageName: node
+  linkType: hard
+
 "@preline/tooltip@npm:^2.4.1":
   version: 2.4.1
   resolution: "@preline/tooltip@npm:2.4.1"
@@ -491,6 +498,7 @@ __metadata:
     "@hotwired/turbo-rails": "npm:^8.0.5"
     "@popperjs/core": "npm:^2.11.8"
     "@preline/file-upload": "npm:^2.4.1"
+    "@preline/remove-element": "npm:^2.4.1"
     "@preline/tooltip": "npm:^2.4.1"
     "@rails/request.js": "npm:^0.0.9"
     "@stimulus-components/carousel": "npm:^6.0.0"

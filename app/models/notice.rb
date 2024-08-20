@@ -1,5 +1,10 @@
 class Notice < ApplicationRecord
+  has_person_name
+
   belongs_to :user
+  has_many_attached :images
+  has_many :payment_intents, as: :payable, class_name: "Payment::Intent"
+
   validates :category, presence: true
   validates :location, presence: true
   validates :platform, presence: true
@@ -10,9 +15,7 @@ class Notice < ApplicationRecord
   validates :wording, presence: true
   validates :relationship, presence: true
 
-  has_person_name
-
-  has_many_attached :images
+  scope :published, -> { where.not(published_at: nil) }
 
   ransacker :created_at, type: :date do
     Arel.sql("date(created_at)")

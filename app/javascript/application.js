@@ -1,18 +1,18 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails";
-import * as _ from "lodash";
-import Dropzone from "dropzone";
+import '@hotwired/turbo-rails'
+import * as _ from 'lodash'
+import Dropzone from 'dropzone'
 
-window.Dropzone = Dropzone;
-window._ = _;
+window.Dropzone = Dropzone
+window._ = _
 
-import "preline";
-import "./controllers";
+import './controllers'
 
-import "swiper/css/bundle";
+import 'swiper/css/bundle'
 
-console.log("Hello from application.js");
+import 'preline'
+import '@preline/remove-element'
 
-document.addEventListener("turbo:load", () => {
-  window.HSStaticMethods.autoInit();
-});
+document.addEventListener('turbo:load', () => {
+  window.HSStaticMethods.autoInit()
+})

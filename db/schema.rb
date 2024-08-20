@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_08_18_134648) do
+ActiveRecord::Schema[7.2].define(version: 2024_08_19_230006) do
   create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -54,7 +54,50 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_18_134648) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "successful_payment_intent_id"
+    t.boolean "payment_successful", default: false
     t.index ["user_id"], name: "index_notices_on_user_id"
+  end
+
+  create_table "payment_intents", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.string "payable_type", null: false
+    t.bigint "payable_id", null: false
+    t.float "amount"
+    t.string "status", default: "pending", null: false
+    t.bigint "transaction_id", null: false
+    t.index ["payable_type", "payable_id"], name: "index_payment_intents_on_payable"
+    t.index ["transaction_id"], name: "index_payment_intents_on_transaction_id"
+    t.index ["user_id"], name: "index_payment_intents_on_user_id"
+  end
+
+  create_table "transactions", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "reference_number", default: "", null: false
+    t.timestamp "date_of_transaction"
+    t.integer "application_id"
+    t.string "application_name", default: "", null: false
+    t.float "amount"
+    t.string "currency_code", default: "", null: false
+    t.float "default_currency_amount"
+    t.string "default_currency_code", default: "", null: false
+    t.float "transaction_service_fee"
+    t.float "customer_payable_amount"
+    t.float "total_transaction_amount"
+    t.float "merchant_amount"
+    t.string "formatted_merchant_amount", default: "", null: false
+    t.string "reason_for_payment", default: "", null: false
+    t.string "transaction_status", default: "", null: false
+    t.string "transaction_status_code"
+    t.string "transaction_status_description", default: "", null: false
+    t.string "result_url", default: ""
+    t.string "return_url", default: ""
+    t.string "poll_url", default: ""
+    t.text "transaction_metadata", size: :long, default: "{}", collation: "utf8mb4_bin"
+    t.check_constraint "json_valid(`transaction_metadata`)", name: "transaction_metadata"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
@@ -81,4 +124,6 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_18_134648) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "notices", "users"
+  add_foreign_key "payment_intents", "transactions"
+  add_foreign_key "payment_intents", "users"
 end

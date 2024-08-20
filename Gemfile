@@ -78,3 +78,5 @@ gem "kaminari", "~> 1.2"
 gem "ransack", "~> 4.2"
 
 gem "cssbundling-rails", "~> 1.4"
+
+gem "pesepay", "~> 0.1.0", require: true
