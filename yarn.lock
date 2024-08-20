@@ -512,6 +512,7 @@ __metadata:
     lodash: "npm:^4.17.21"
     postcss: "npm:^8.4.41"
     preline: "npm:^2.4.1"
+    swiper: "npm:^11.1.9"
     tailwindcss: "npm:^3.4.10"
   languageName: unknown
   linkType: soft
@@ -1906,7 +1907,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swiper@npm:^11.0.6":
+"swiper@npm:^11.0.6, swiper@npm:^11.1.9":
   version: 11.1.9
   resolution: "swiper@npm:11.1.9"
   checksum: 10c0/75666f358c78bedf69f3db9ee83c4f4213bf7e87d42708bb3b87a11f7a85da13e73444f670e6ee1d35642a35c889241c8c525033621965345199f42cb141e616
