@@ -1,3 +1,45 @@
+<% set_meta_tags title: "The orbituary notice for #{@notice.name}",
+description:
+  "Honoring the life of #{@notice.name}, who touched the hearts of many. Read their full obituary, learn about upcoming funeral services, and share your memories and condolences with family and friends. Celebrate their legacy and keep their memory alive through heartfelt tributes and stories" %>
+
+<% set_meta_tags og: {
+  title: "The orbituary notice for #{@notice.name}",
+  keywords:
+    "obituary for [Name], [Name] obituary, funeral notice for [Name], memorial for [Name], tribute to [Name], [Name] life story, [Name] death notice, [Name] funeral details, condolences for [Name], honor [Name], remembering [Name], [Name] funeral service, celebration of life for [Name], legacy of [Name], [Name] remembrance, share memories of [Name], [Name] obituary Zimbabwe, online obituary for [Name], [Name] funeral arrangements, [Name] memorial page.".gsub(
+      "[Name]",
+      @notice.name,
+    ),
+  description:
+    "Honoring the life of #{@notice.name}, who touched the hearts of many. Read their full obituary, learn about upcoming funeral services, and share your memories and condolences with family and friends. Celebrate their legacy and keep their memory alive through heartfelt tributes and stories",
+  image:
+    (
+      if @notice.images.attached?
+        url_for(@notice.images.first)
+      else
+        image_url("notice_2.jpg")
+      end
+    ),
+} %>
+
+<% set_meta_tags twitter: {
+  title: "The orbituary notice for #{@notice.name}",
+  keywords:
+    "obituary for [Name], [Name] obituary, funeral notice for [Name], memorial for [Name], tribute to [Name], [Name] life story, [Name] death notice, [Name] funeral details, condolences for [Name], honor [Name], remembering [Name], [Name] funeral service, celebration of life for [Name], legacy of [Name], [Name] remembrance, share memories of [Name], [Name] obituary Zimbabwe, online obituary for [Name], [Name] funeral arrangements, [Name] memorial page.".gsub(
+      "[Name]",
+      @notice.name,
+    ),
+  description:
+    "Honoring the life of #{@notice.name}, who touched the hearts of many. Read their full obituary, learn about upcoming funeral services, and share your memories and condolences with family and friends. Celebrate their legacy and keep their memory alive through heartfelt tributes and stories",
+  image:
+    (
+      if @notice.images.attached?
+        url_for(@notice.images.first)
+      else
+        image_url("notice_2.jpg")
+      end
+    ),
+} %>
+
 <div>
   <div class="p-4 mb-4 rounded border">
     <div class="flex flex-col justify-between p-4 leading-normal">

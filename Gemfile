@@ -86,3 +86,7 @@ gem "mina", "~> 1.2"
 gem "sidekiq", "~> 7.3"
 
 gem "friendly_id", "~> 5.5"
+
+gem "canonical-rails", github: "jumph4x/canonical-rails"
+
+gem "meta-tags", "~> 2.22"
