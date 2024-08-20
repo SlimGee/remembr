@@ -37,7 +37,7 @@ WorkingDirectory=<APP_PATH>
 #Environment="NVM_DIR="$HOME/.nvm";nvm use default"
 Environment="PATH=/home/given/.rbenv/shims:/home/given/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 
-ExecStart=<APP_PATH>/current/bin/bundle exec puma -e production --pidfile <APP_PATH>/shared/tmp/pids/server.pid -C <APP_PATH>/current/config/puma.rb -b <APP_PATH>/shared/tmp/puma.sock <APP_PATH>/current/config.ru
+ExecStart=<APP_PATH>/current/bin/bundle exec puma -e production --pidfile <APP_PATH>/shared/tmp/pids/server.pid -C <APP_PATH>/current/config/puma.rb -b unix://<APP_PATH>/shared/tmp/puma.sock <APP_PATH>/current/config.ru
 
 # Variant: Use `bundle exec puma` instead of binstub
 # Variant: Specify directives inline.

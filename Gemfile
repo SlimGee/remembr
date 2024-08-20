@@ -82,3 +82,5 @@ gem "cssbundling-rails", "~> 1.4"
 gem "pesepay", "~> 0.1.0", require: true
 
 gem "mina", "~> 1.2"
+
+gem "sidekiq", "~> 7.3"
