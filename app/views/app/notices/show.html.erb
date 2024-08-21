@@ -76,14 +76,14 @@ description:
                 <div class="swiper-slide">
                   <%= image_tag image,
                   class: " w-full h-auto object-contain rounded-lg  md:h-auto",
-                  alt: "Photo of #{notice.name} orbituary notice" %>
+                  alt: "Photo of #{@notice.name} orbituary notice" %>
                 </div>
               <% end %>
             <% else %>
               <div class="h-48 swiper-slide">
                 <%= image_tag "notice_2.jpg",
                 class: "w-full h-auto object-contain rounded-lg  md:h-auto",
-                alt: "Placeholder photo of #{notice.name} orbituary notice" %>
+                alt: "Placeholder photo of #{@notice.name} orbituary notice" %>
               </div>
             <% end %>
 

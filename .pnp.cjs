@@ -33,10 +33,8 @@ const RAW_RUNTIME_STATE =
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
           ["@preline/select", "npm:2.4.1"],\
-          ["@preline/tooltip", "npm:2.4.1"],\
           ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
           ["@rails/request.js", "npm:0.0.9"],\
-          ["@stimulus-components/carousel", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:6.0.0"],\
           ["@tailwindcss/container-queries", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.1.1"],\
           ["@tailwindcss/forms", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.7"],\
           ["@tailwindcss/typography", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.14"],\
@@ -1289,15 +1287,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@preline/tooltip", [\
-      ["npm:2.4.1", {\
-        "packageLocation": "../../../.yarn/berry/cache/@preline-tooltip-npm-2.4.1-a696f5a64c-10c0.zip/node_modules/@preline/tooltip/",\
-        "packageDependencies": [\
-          ["@preline/tooltip", "npm:2.4.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@rails/actioncable", [\
       ["npm:7.2.0", {\
         "packageLocation": "../../../.yarn/berry/cache/@rails-actioncable-npm-7.2.0-daa1754c1b-10c0.zip/node_modules/@rails/actioncable/",\
@@ -1345,29 +1334,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@rails-request.js-npm-0.0.9-7eb58e3a9e-10c0.zip/node_modules/@rails/request.js/",\
         "packageDependencies": [\
           ["@rails/request.js", "npm:0.0.9"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@stimulus-components/carousel", [\
-      ["npm:6.0.0", {\
-        "packageLocation": "../../../.yarn/berry/cache/@stimulus-components-carousel-npm-6.0.0-283556c9ec-10c0.zip/node_modules/@stimulus-components/carousel/",\
-        "packageDependencies": [\
-          ["@stimulus-components/carousel", "npm:6.0.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:6.0.0", {\
-        "packageLocation": "./.yarn/__virtual__/@stimulus-components-carousel-virtual-e51c02b5ad/4/.yarn/berry/cache/@stimulus-components-carousel-npm-6.0.0-283556c9ec-10c0.zip/node_modules/@stimulus-components/carousel/",\
-        "packageDependencies": [\
-          ["@stimulus-components/carousel", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:6.0.0"],\
-          ["@hotwired/stimulus", "npm:3.2.2"],\
-          ["@types/hotwired__stimulus", null],\
-          ["swiper", "npm:11.1.9"]\
-        ],\
-        "packagePeers": [\
-          "@hotwired/stimulus",\
-          "@types/hotwired__stimulus"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1555,10 +1521,8 @@ const RAW_RUNTIME_STATE =
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
           ["@preline/select", "npm:2.4.1"],\
-          ["@preline/tooltip", "npm:2.4.1"],\
           ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
           ["@rails/request.js", "npm:0.0.9"],\
-          ["@stimulus-components/carousel", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:6.0.0"],\
           ["@tailwindcss/container-queries", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.1.1"],\
           ["@tailwindcss/forms", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.7"],\
           ["@tailwindcss/typography", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.14"],\
