@@ -16,9 +16,11 @@ module Remembr
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w[assets tasks])
 
-    config.middleware.use Rack::Deflater
+    config.middleware.insert_after ActionDispatch::Static, Rack::Deflater
 
     config.action_view.image_loading = "lazy"
+
+    config.active_job.queue_adapter = :sidekiq
 
     # Configuration for the application, engines, and railties goes here.
     #

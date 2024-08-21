@@ -8,10 +8,7 @@ window._ = _
 
 import './controllers'
 
-import 'swiper/css/bundle'
-
 import 'preline'
-import '@preline/remove-element'
 
 document.addEventListener('turbo:load', () => {
   window.HSStaticMethods.autoInit()

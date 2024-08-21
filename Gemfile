@@ -88,3 +88,7 @@ gem "friendly_id", "~> 5.5"
 gem "canonical-rails", github: "jumph4x/canonical-rails"
 
 gem "meta-tags", "~> 2.22"
+
+gem "oj", "~> 3.16"
+
+gem "notable", "~> 0.5.2"

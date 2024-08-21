@@ -1,11 +1,13 @@
-<%= link_to app_notice_path(notice), class: 'flex flex-col items-center bg-white rounded border border-gray-200 md:flex-row dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700' do %>
+<%= link_to app_notice_path(notice), class: 'flex flex-col items-center bg-white rounded border border-gray-200 md:flex-row dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700', title: "View the orbituary notice of #{notice.name}" do %>
   <div class="p-2">
     <% if notice.images.attached? %>
       <%= image_tag notice.images.first,
-      class: "object-cover w-full h-48 rounded md:aspect-square md:h-36" %>
+      class: "object-cover w-full h-auto rounded md:aspect-square md:h-36",
+      alt: "Photo of #{notice.name} orbituary notice" %>
     <% else %>
       <%= image_tag "notice_2.jpg",
-      class: "object-cover w-full h-48 rounded md:aspect-square md:h-36" %>
+      class: "object-cover w-full h-auto rounded md:aspect-square md:h-36",
+      alt: "Placeholder photo of #{notice.name} orbituary notice" %>
     <% end %>
   </div>
 

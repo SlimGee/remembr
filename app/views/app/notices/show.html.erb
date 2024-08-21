@@ -1,6 +1,6 @@
 <% set_meta_tags title: "The orbituary notice for #{@notice.name}",
 description:
-  "Honoring the life of #{@notice.name}, who touched the hearts of many. Read their full obituary, learn about upcoming funeral services, and share your memories and condolences with family and friends. Celebrate their legacy and keep their memory alive through heartfelt tributes and stories" %>
+  "Honoring the life of #{@notice.name}. Read their obituary, funeral details, and share your memories." %>
 
 <% set_meta_tags og: {
   title: "The orbituary notice for #{@notice.name}",
@@ -10,7 +10,7 @@ description:
       @notice.name,
     ),
   description:
-    "Honoring the life of #{@notice.name}, who touched the hearts of many. Read their full obituary, learn about upcoming funeral services, and share your memories and condolences with family and friends. Celebrate their legacy and keep their memory alive through heartfelt tributes and stories",
+    "Honoring the life of #{@notice.name}. Read their obituary, funeral details, and share your memories.",
   image:
     (
       if @notice.images.attached?
@@ -29,7 +29,7 @@ description:
       @notice.name,
     ),
   description:
-    "Honoring the life of #{@notice.name}, who touched the hearts of many. Read their full obituary, learn about upcoming funeral services, and share your memories and condolences with family and friends. Celebrate their legacy and keep their memory alive through heartfelt tributes and stories",
+    "Honoring the life of #{@notice.name}. Read their obituary, funeral details, and share your memories.",
   image:
     (
       if @notice.images.attached?
@@ -47,7 +47,7 @@ description:
         The orbituary notice for
       </p>
 
-      <h5
+      <h1
         class="mb-1 text-2xl font-semibold tracking-tight text-center text-gray-600"
       >
         <%= @notice.first_name %>
@@ -55,7 +55,7 @@ description:
           (<%= @notice.nickname %>)
         <% end %>
         <%= @notice.last_name %>
-      </h5>
+      </h1>
       <p class="mb-1 font-normal text-center text-gray-500 dark:text-gray-400">
         <%= @notice.location %>
         | published in:
@@ -74,13 +74,16 @@ description:
             <% if @notice.images.attached? %>
               <% @notice.images.each do |image| %>
                 <div class="swiper-slide">
-                  <%= image_tag image, class: " w-full h-auto object-contain rounded-lg  md:h-auto" %>
+                  <%= image_tag image,
+                  class: " w-full h-auto object-contain rounded-lg  md:h-auto",
+                  alt: "Photo of #{notice.name} orbituary notice" %>
                 </div>
               <% end %>
             <% else %>
               <div class="h-48 swiper-slide">
                 <%= image_tag "notice_2.jpg",
-                class: "object-cover w-full h-96 rounded-lg aspect-square md:h-36" %>
+                class: "w-full h-auto object-contain rounded-lg  md:h-auto",
+                alt: "Placeholder photo of #{notice.name} orbituary notice" %>
               </div>
             <% end %>
 

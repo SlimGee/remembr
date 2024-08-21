@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_08_20_145027) do
+ActiveRecord::Schema[7.2].define(version: 2024_08_21_161625) do
   create_table "action_text_rich_texts", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.string "name", null: false
     t.text "body", size: :long
@@ -58,6 +58,35 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_20_145027) do
     t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, length: { slug: 70, scope: 70 }
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", length: { slug: 140 }
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
+  end
+
+  create_table "notable_jobs", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.string "note_type"
+    t.text "note"
+    t.text "job"
+    t.string "job_id"
+    t.string "queue"
+    t.float "runtime"
+    t.float "queued_time"
+    t.datetime "created_at"
+  end
+
+  create_table "notable_requests", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.string "note_type"
+    t.text "note"
+    t.string "user_type"
+    t.bigint "user_id"
+    t.text "action"
+    t.integer "status"
+    t.text "url"
+    t.string "request_id"
+    t.string "ip"
+    t.text "user_agent"
+    t.text "referrer"
+    t.text "params"
+    t.float "request_time"
+    t.datetime "created_at"
+    t.index ["user_type", "user_id"], name: "index_notable_requests_on_user"
   end
 
   create_table "notices", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
