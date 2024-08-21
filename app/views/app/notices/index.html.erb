@@ -1,19 +1,21 @@
 <div>
   <div class="mb-4 w-full">
     <%= search_form_for @q, url: app_path do |f| %>
-      <div class="flex items-baseline space-x-3 w-full">
+      <div
+        class="flex flex-col items-baseline space-y-3 w-full md:flex-row md:space-y-0 md:space-x-3"
+      >
 
-        <div class="flex space-x-3 w-8/12">
+        <div class="flex w-full md:space-x-3 md:w-8/12">
           <%= f.search_field :location_cont,
-                         class: "form-input w-1/2",
+                         class: "form-input w-1/2 hidden md:block",
                          placeholder: "City or town" %>
 
           <%= f.search_field :first_name_or_last_name_or_nickname_or_wording_or_location_cont,
-                         class: "form-input w-1/2",
+                         class: "form-input w-full md:w-1/2",
                          placeholder: "Name or keyword" %>
         </div>
 
-        <div class="flex space-x-2 w-4/12">
+        <div class="hidden space-x-2 w-full md:flex md:w-4/12">
 
           <%= f.search_field :created_at_gteq,
                          class: "form-input w-1/2",
@@ -24,11 +26,11 @@
                          class: "form-input w-1/2",
                          "data-controller": "datepicker" %>
         </div>
-        <%= link_to app_path, title: 'Reset filteres' do %>
+        <%= link_to app_path, title: 'Reset filteres', class: 'hidden md:block' do %>
           <i class="px-0.5 text-sm rounded-full border bi bi-x"></i>
         <% end %>
 
-        <%= f.submit class: "btn-primary" %>
+        <%= f.submit class: "btn-primary w-full md:w-auto" %>
       </div>
     <% end %>
 
