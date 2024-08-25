@@ -25,11 +25,11 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center px-4 cursor-pointer sm:px-4 py-2.5 sm:py-2.5 bg-blue-600 border border-transparent rounded font-medium text-sm text-white text-center  hover:bg-blue-700 active:bg-blue-900 focus:outline-none focus:shadow-blue-800 hover:bg-blue-900 transition ease-in-out duration-150 disabled:opacity-50 disabled:pointer-events-none;
+    @apply inline-flex items-center px-4 cursor-pointer sm:px-4 py-2.5 sm:py-2.5 bg-green-600 border border-transparent rounded font-semibold text-sm text-white text-center  hover:bg-green-700 active:bg-green-900 focus:outline-none focus:shadow-green-800 hover:bg-green-900 transition ease-in-out duration-150 disabled:opacity-50 disabled:pointer-events-none;
   }
 
   .btn-outline {
-    @apply inline-flex gap-x-2  items-center py-2.5 px-4  text-sm font-medium text-gray-800 bg-white rounded border border-gray-200 shadow-sm  hover:bg-gray-50 focus:bg-gray-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none;
+    @apply inline-flex gap-x-2  items-center py-2.5 px-4  text-sm font-semibold text-gray-800 bg-white rounded border border-gray-200 shadow-sm  hover:bg-gray-50 focus:bg-gray-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none;
   }
 
   .link {
@@ -47,3 +47,4 @@
   }
 }
 @import 'actiontext.css';
+
