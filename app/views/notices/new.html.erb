@@ -2,13 +2,9 @@
 
 <div class="mx-auto w-full md:w-2/3">
   <h1 class="text-4xl font-bold">New notice</h1>
+
   <!-- say something about how we need $5 to post a notice, it's a one time fee
   -->
-  <p class="my-4 italic text-gray-500">
-    To post a notice, you need to pay a fee of $5. This helps us keep the site
-    running.
-  </p>
-
   <%= render "form", notice: @notice %>
 
   <%= link_to "Back to notices", notices_path, class: "ml-2 btn-outline" %>
