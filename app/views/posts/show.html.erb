@@ -1,5 +1,19 @@
-<!-- Install the "flowbite-typography" NPM package to apply styles and format
-the article content: URL: https://flowbite.com/docs/components/typography/ -->
+<% set_meta_tags title: @post.title,
+description: @post.description,
+keywords: @post.keywords %>
+
+<% set_meta_tags og: {
+  title: @post.title,
+  description: @post.description,
+  image: polymorphic_url(@post.cover),
+} %>
+
+<% set_meta_tags twitter: {
+  title: @post.title,
+  description: @post.description,
+  image: polymorphic_url(@post.cover),
+} %>
+
 <main
   class="pt-8 pb-16 antialiased bg-white lg:pt-16 lg:pb-24 dark:bg-gray-900"
 >
