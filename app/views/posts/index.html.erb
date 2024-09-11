@@ -1,0 +1,22 @@
+<section class="py-24">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <h2 class="mb-16 text-4xl font-bold text-center text-gray-900 font-manrope">
+      Articles and resources
+    </h2>
+
+    <% @posts.each_slice(3) do |chunk| %>
+
+      <div
+        class="flex flex-wrap gap-y-8 justify-center md:flex-wrap lg:flex-row lg:flex-nowrap lg:gap-y-0 lg:gap-x-8 lg:justify-between"
+      >
+
+        <% chunk.each do |post| %>
+          <%= render post %>
+        <% end %>
+
+      </div>
+
+    <% end %>
+
+  </div>
+</section>

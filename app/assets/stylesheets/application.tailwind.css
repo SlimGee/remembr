@@ -45,6 +45,8 @@
   .checkbox {
     @apply shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800;
   }
-}
-@import 'actiontext.css';
 
+  .button {
+    @apply inline-flex items-center px-4 py-2.5 bg-blue-accent-700 border border-transparent rounded-sm font-medium text-sm text-white text-center tracking-wide hover:bg-deep-purple-700 active:bg-deep-purple-900 focus:outline-none focus:border-deep-purple-900  transition ease-in-out duration-150 cursor-pointer;
+  }
+}

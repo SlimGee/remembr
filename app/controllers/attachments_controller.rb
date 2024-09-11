@@ -1,6 +1,10 @@
 class AttachmentsController < ApplicationController
   def destroy
-    attachment = ActiveStorage::Attachment.find(params[:id])
+    if attachment = ActiveStorage::Attachment.find_by(id: params[:id])
+    else
+      attachment = ActiveStorage::Blob.find(params[:id])
+    end
+
     attachment.purge
 
     render json: {status: :ok}

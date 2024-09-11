@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_08_21_161625) do
+ActiveRecord::Schema[7.2].define(version: 2024_09_11_003205) do
   create_table "action_text_rich_texts", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.string "name", null: false
     t.text "body", size: :long
@@ -125,6 +125,39 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_21_161625) do
     t.index ["user_id"], name: "index_payment_intents_on_user_id"
   end
 
+  create_table "posts", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "title"
+    t.text "excerpt"
+    t.text "description"
+    t.text "keywords"
+    t.string "status"
+    t.timestamp "published_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "slug"
+    t.index ["slug"], name: "index_posts_on_slug", unique: true, using: :hash
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
+
+  create_table "rabarber_roles", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "context_type"
+    t.bigint "context_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["context_type", "context_id"], name: "index_rabarber_roles_on_context"
+    t.index ["name", "context_type", "context_id"], name: "index_rabarber_roles_on_name_and_context_type_and_context_id", unique: true
+  end
+
+  create_table "rabarber_roles_roleables", id: false, charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.bigint "role_id", null: false
+    t.bigint "roleable_id", null: false
+    t.index ["role_id", "roleable_id"], name: "index_rabarber_roles_roleables_on_role_id_and_roleable_id", unique: true
+    t.index ["role_id"], name: "index_rabarber_roles_roleables_on_role_id"
+    t.index ["roleable_id"], name: "index_rabarber_roles_roleables_on_roleable_id"
+  end
+
   create_table "transactions", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -177,4 +210,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_21_161625) do
   add_foreign_key "notices", "users"
   add_foreign_key "payment_intents", "transactions"
   add_foreign_key "payment_intents", "users"
+  add_foreign_key "posts", "users"
+  add_foreign_key "rabarber_roles_roleables", "rabarber_roles", column: "role_id"
+  add_foreign_key "rabarber_roles_roleables", "users", column: "roleable_id"
 end

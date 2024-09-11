@@ -1,19 +1,28 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    root "home#index"
+    resources :posts
+  end
+
   namespace :payments do
     post "callback" => "callback#create"
   end
   namespace :dashboard do
     root "home#index"
   end
+
   namespace :app do
     get "/" => "notices#index"
     resources :notices, only: %i[show]
   end
+
   resources :notices
   resources :notices do
     resource :notice_images, only: %i[new create]
     post "payment" => "payment#create"
   end
+
+  resources :posts, only: %i[index show]
 
   delete "attachments/:id" => "attachments#destroy", :as => :destroy_attachment
 

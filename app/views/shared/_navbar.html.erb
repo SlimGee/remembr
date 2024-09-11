@@ -73,21 +73,27 @@
           class="flex flex-col gap-0.5 py-2 md:flex-row md:gap-1 md:items-center md:py-0"
         >
           <div class="grow">
-            <div
-              class="flex flex-col gap-0.5 md:flex-row md:gap-1 md:justify-end md:items-center"
-            >
+            <div class="flex flex-col gap-5 md:flex-row md:justify-end md:items-center">
+
               <%= link_to "All Announcements",
               app_path,
               class: [
-                "text-sm font-semibold focus:text-blue-600 text-gray-700 focus:outline-none dark:focus:text-blue-500",
-                ("text-blue-600" if current_page?(app_path)),
+                "font-medium text-gray-600 hover:text-gray-400 focus:text-gray-400 focus:outline-none",
+                ("!text-blue-600" if current_page?(app_path)),
               ] %>
-              <a
-                target="_blank"
-                class="text-sm font-semibold text-gray-700 hover:text-blue-600 focus:text-blue-600 focus:outline-none dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
-                href="https://wa.me/263719071581?text=Hello%20Remembr%20Team%21%20I%20have%20a%20question%20about%20your%20platform."
-              >Contact
-              </a>
+
+              <%= link_to "Blog",
+              posts_path,
+              class: [
+                "font-medium text-gray-600 hover:text-gray-400 focus:text-gray-400 focus:outline-none",
+                ("!text-blue-600" if current_page?(posts_path)),
+              ] %>
+
+              <%= link_to "Talk to someone",
+              "https://wa.me/263719071581?text=Hello%20Remembr%20Team%21%20I%20have%20a%20question%20about%20your%20platform.",
+              class:
+                "font-medium text-gray-600 hover:text-gray-400 focus:text-gray-400 focus:outline-none",
+              target: "_blank" %>
             </div>
           </div>
           <div class="my-2 md:my-0 md:mx-2">
@@ -111,4 +117,3 @@
     <!-- End Collapse -->
   </nav>
 </header>
-<!-- ========== END HEADER ========== --> <!-- Nav -->

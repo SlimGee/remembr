@@ -1,0 +1,47 @@
+<div id="<%= dom_id post %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">User:</strong>
+    <%= post.user_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Title:</strong>
+    <%= post.title %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Content:</strong>
+    <%= post.content %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cover:</strong>
+    <%= link_to post.cover.filename, post.cover if post.cover.attached? %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Excerpt:</strong>
+    <%= post.excerpt %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description:</strong>
+    <%= post.description %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Keywords:</strong>
+    <%= post.keywords %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Status:</strong>
+    <%= post.status %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Published at:</strong>
+    <%= post.published_at %>
+  </p>
+
+</div>

@@ -33,13 +33,15 @@ const RAW_RUNTIME_STATE =
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
           ["@preline/select", "npm:2.4.1"],\
-          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
-          ["@rails/request.js", "npm:0.0.9"],\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.100"],\
+          ["@rails/activestorage", "npm:7.2.100"],\
+          ["@rails/request.js", "npm:0.0.11"],\
           ["@tailwindcss/container-queries", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.1.1"],\
           ["@tailwindcss/forms", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.7"],\
           ["@tailwindcss/typography", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.14"],\
           ["air-datepicker", "npm:3.5.3"],\
           ["autoprefixer", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.4.20"],\
+          ["choices.js", "npm:11.0.2"],\
           ["ckeditor5", "npm:43.0.0"],\
           ["dropzone", "npm:6.0.0-beta.2"],\
           ["esbuild", "npm:0.23.1"],\
@@ -1297,17 +1299,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@rails/actiontext", [\
-      ["npm:7.2.0", {\
-        "packageLocation": "../../../.yarn/berry/cache/@rails-actiontext-npm-7.2.0-3655d6ebe7-10c0.zip/node_modules/@rails/actiontext/",\
+      ["npm:7.2.100", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-actiontext-npm-7.2.100-e344f296cc-10c0.zip/node_modules/@rails/actiontext/",\
         "packageDependencies": [\
-          ["@rails/actiontext", "npm:7.2.0"]\
+          ["@rails/actiontext", "npm:7.2.100"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0", {\
-        "packageLocation": "./.yarn/__virtual__/@rails-actiontext-virtual-3c21c0e3cc/4/.yarn/berry/cache/@rails-actiontext-npm-7.2.0-3655d6ebe7-10c0.zip/node_modules/@rails/actiontext/",\
+      ["virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.100", {\
+        "packageLocation": "./.yarn/__virtual__/@rails-actiontext-virtual-8281709e8d/4/.yarn/berry/cache/@rails-actiontext-npm-7.2.100-e344f296cc-10c0.zip/node_modules/@rails/actiontext/",\
         "packageDependencies": [\
-          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.100"],\
           ["@rails/activestorage", "npm:7.2.0"],\
           ["@types/trix", null],\
           ["trix", "npm:2.1.5"]\
@@ -1327,13 +1329,21 @@ const RAW_RUNTIME_STATE =
           ["spark-md5", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:7.2.100", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-activestorage-npm-7.2.100-a5c29bd3e1-10c0.zip/node_modules/@rails/activestorage/",\
+        "packageDependencies": [\
+          ["@rails/activestorage", "npm:7.2.100"],\
+          ["spark-md5", "npm:3.0.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@rails/request.js", [\
-      ["npm:0.0.9", {\
-        "packageLocation": "../../../.yarn/berry/cache/@rails-request.js-npm-0.0.9-7eb58e3a9e-10c0.zip/node_modules/@rails/request.js/",\
+      ["npm:0.0.11", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-request.js-npm-0.0.11-9dbbcb10d6-10c0.zip/node_modules/@rails/request.js/",\
         "packageDependencies": [\
-          ["@rails/request.js", "npm:0.0.9"]\
+          ["@rails/request.js", "npm:0.0.11"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1521,13 +1531,15 @@ const RAW_RUNTIME_STATE =
           ["@preline/file-upload", "npm:2.4.1"],\
           ["@preline/remove-element", "npm:2.4.1"],\
           ["@preline/select", "npm:2.4.1"],\
-          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.0"],\
-          ["@rails/request.js", "npm:0.0.9"],\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:7.2.100"],\
+          ["@rails/activestorage", "npm:7.2.100"],\
+          ["@rails/request.js", "npm:0.0.11"],\
           ["@tailwindcss/container-queries", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.1.1"],\
           ["@tailwindcss/forms", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.7"],\
           ["@tailwindcss/typography", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:0.5.14"],\
           ["air-datepicker", "npm:3.5.3"],\
           ["autoprefixer", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.4.20"],\
+          ["choices.js", "npm:11.0.2"],\
           ["ckeditor5", "npm:43.0.0"],\
           ["dropzone", "npm:6.0.0-beta.2"],\
           ["esbuild", "npm:0.23.1"],\
@@ -1673,6 +1685,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/caniuse-lite-npm-1.0.30001651-976e4d30de-10c0.zip/node_modules/caniuse-lite/",\
         "packageDependencies": [\
           ["caniuse-lite", "npm:1.0.30001651"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["choices.js", [\
+      ["npm:11.0.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/choices.js-npm-11.0.2-119142600b-10c0.zip/node_modules/choices.js/",\
+        "packageDependencies": [\
+          ["choices.js", "npm:11.0.2"],\
+          ["fuse.js", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2089,6 +2111,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/function-bind-npm-1.1.2-7a55be9b03-10c0.zip/node_modules/function-bind/",\
         "packageDependencies": [\
           ["function-bind", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fuse.js", [\
+      ["npm:7.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/fuse.js-npm-7.0.0-8a5f379683-10c0.zip/node_modules/fuse.js/",\
+        "packageDependencies": [\
+          ["fuse.js", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\

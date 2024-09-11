@@ -1,0 +1,2 @@
+class DropzoneController < ApplicationController
+end

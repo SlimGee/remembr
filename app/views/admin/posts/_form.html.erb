@@ -1,0 +1,137 @@
+<%= form_with(model: [:admin, post],  class: "contents") do |form| %>
+  <% post.errors.each do |error| %>
+
+    <%= error.full_message %>
+  <% end %>
+  <section class="flex justify-between sm:px-6 lg:px-8 lg:pb-3">
+    <div></div>
+    <div>
+      <div class="flex gap-x-2 justify-end">
+        <%= link_to admin_posts_path do %>
+          <button type="button" class="btn-outline">Cancel</button>
+        <% end %>
+        <%= form.submit "Save changes", class: "button" %>
+      </div>
+    </div>
+  </section>
+  <section class="flex w-full">
+    <div class="py-10 px-4 w-7/12 sm:px-6 lg:py-6 lg:px-8">
+      <!-- Card -->
+      <div class="p-4 bg-white rounded border shadow-sm sm:p-7">
+
+        <div class="mb-4">
+          <%= form.label :title %>
+          <%= form.text_field :title, class: "form-input w-full mt-1" %>
+        </div>
+
+        <div class="mb-4 prose md:prose-lg !w-full !max-w-full">
+          <%= form.label :content %>
+          <%= form.rich_text_area :content,
+                              class:
+                                "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="py-10 px-4 w-5/12 sm:px-6 lg:py-6 lg:px-8">
+      <!-- Card -->
+      <div class="p-4 bg-white rounded border shadow-sm sm:p-7">
+
+        <div class="mb-3 w-full">
+          <%= form.label :cover %>
+
+          <%= content_tag :div, class: 'mb-3 mt-2 dropzone w-full', data: {
+        controller: "dropzone",
+        dropzone_options: {
+          thumbnailHeight: 600,
+          thumbnailWidth: 700
+        },
+        dropzone_max_file_size: 5,
+        dropzone_existing_files_value: post.cover.attached? ? [{ id: post.cover.id, name: post.cover.filename, size: post.cover.byte_size, url: url_for(post.cover) }] : [],
+        dropzone_accepted_files: "image/*",
+        dropzone_destroy_url_value: destroy_attachment_path(':id'),
+        dropzone_max_files: 1
+
+      } do %>
+            <div class="flex flex-wrap gap-3 items-center w-full sm:gap-5 dz-clickable">
+              <%= content_tag :div, class: 'group w-full', data: { dropzone_target: "clickable previewsContainer" } do %>
+                <span
+                  class="flex justify-center items-center w-full rounded border-2 border-gray-300 border-dotted cursor-pointer hover:bg-gray-50 size-72 text-gray-401 group-has-[div]:hidden shrink-0"
+                >
+                  <i class="text-7xl shrink-1 bi bi-cloud-arrow-up text-slate-500"></i>
+                </span>
+              <% end %>
+
+              <template data-dropzone-target="previewTemplate">
+                <div class="relative p-1 mt-2 bg-white rounded border border-gray-200">
+                  <img class="object-cover mb-1 w-full rounded size-72" data-dz-thumbnail="">
+
+                  <div class="flex gap-x-3 justify-between items-center whitespace-nowrap">
+                    <div class="flex-auto">
+                      <div
+                        class="flex overflow-hidden w-full h-0.5 bg-gray-200 rounded-full"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <div
+                          class="flex overflow-hidden flex-col justify-center text-xs text-center text-white whitespace-nowrap bg-blue-600 rounded-full transition-all duration-500 dz-upload"
+                          style="width: 0"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="text-gray-500 hover:text-gray-800 focus:text-gray-800 focus:outline-none"
+                      data-dz-remove
+                    >
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </template>
+
+            </div>
+
+            <%= form.file_field :cover, direct_upload: true, data: { dropzone_target: "input" } %>
+            <div class="dropzone-msg dz-message needsclick">
+            </div>
+          <% end %>
+
+        </div>
+
+        <div class="mb-4" data-controller="choices">
+          <%= form.label :status %>
+          <%= form.select :status,
+                      Post.statuses.map { |status| [status[0].humanize, status[1]] },
+                      { include_blank: false },
+                      class: "form-select mt-2 w-full",
+                      data: {
+                        choices_target: "element",
+                      } %>
+        </div>
+
+        <div class="mb-4">
+          <%= form.label :excerpt %>
+          <%= form.text_area :excerpt, rows: 4, class: "form-input mt-2 w-full" %>
+        </div>
+
+        <div class="mb-4">
+          <%= form.label :keywords %>
+
+          <%= form.text_area :keywords, rows: 4, class: "form-input mt-2 w-full" %>
+        </div>
+        <div class="mb-4">
+          <%= form.label :description %>
+          <%= form.text_area :description, rows: 4, class: "form-input mt-2 w-full" %>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<% end %>

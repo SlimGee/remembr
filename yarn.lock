@@ -1098,14 +1098,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rails/actiontext@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@rails/actiontext@npm:7.2.0"
+"@rails/actiontext@npm:^7.2.100":
+  version: 7.2.100
+  resolution: "@rails/actiontext@npm:7.2.100"
   dependencies:
     "@rails/activestorage": "npm:>= 7.2.0-alpha"
   peerDependencies:
     trix: ^2.0.0
-  checksum: 10c0/22c3542d743b986a79dbd69f6ad556c4a25ba29be5a9439f2fb843699bbc40c7d5c5b2380f3ecacd8e5aff959af126c854ce9f0fa75d3df0c003f2c2d0c32029
+  checksum: 10c0/865e435bae635386688a7ba71958a02143f8cddc3a24dbf4915cda14ff7b5026bfaa420d0cd317e073a70c4f406b775a59dcbd40ee87f9259b6af577355e21a7
   languageName: node
   linkType: hard
 
@@ -1118,10 +1118,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rails/request.js@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "@rails/request.js@npm:0.0.9"
-  checksum: 10c0/a2a5fe0da8633fdeb6e884718dc9c1a84504cf195ae5c4840d175fec69ab7ab33d0c8f42df3f11cba1a1a37e9a3bbcaf2d12f60dfdf4f0273fe91d500b357a6e
+"@rails/activestorage@npm:^7.2.100":
+  version: 7.2.100
+  resolution: "@rails/activestorage@npm:7.2.100"
+  dependencies:
+    spark-md5: "npm:^3.0.1"
+  checksum: 10c0/1e1e7aebf26157e3b3d098dfad6d16be3c709943663cfcd56ae3c3fb2fe6475098df008f7d401ec4d088dffd88f1802bdcdee4837e5b9a8f33591f81fb19efe2
+  languageName: node
+  linkType: hard
+
+"@rails/request.js@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@rails/request.js@npm:0.0.11"
+  checksum: 10c0/983f7278bed81d00f64e44183a4d3e3f98fd9488592da2f6446b1dc5ab89a466d1686722dce16d0c8defb4aba976bb2202885f84ab7bb3256768996f9aaea291
   languageName: node
   linkType: hard
 
@@ -1256,13 +1265,15 @@ __metadata:
     "@preline/file-upload": "npm:^2.4.1"
     "@preline/remove-element": "npm:^2.4.1"
     "@preline/select": "npm:^2.4.1"
-    "@rails/actiontext": "npm:^7.2.0"
-    "@rails/request.js": "npm:^0.0.9"
+    "@rails/actiontext": "npm:^7.2.100"
+    "@rails/activestorage": "npm:^7.2.100"
+    "@rails/request.js": "npm:^0.0.11"
     "@tailwindcss/container-queries": "npm:^0.1.1"
     "@tailwindcss/forms": "npm:^0.5.7"
     "@tailwindcss/typography": "npm:^0.5.14"
     air-datepicker: "npm:^3.5.3"
     autoprefixer: "npm:^10.4.20"
+    choices.js: "npm:^11.0.2"
     ckeditor5: "npm:^43.0.0"
     dropzone: "npm:^6.0.0-beta.2"
     esbuild: "npm:^0.23.1"
@@ -1384,6 +1395,15 @@ __metadata:
   version: 1.0.30001651
   resolution: "caniuse-lite@npm:1.0.30001651"
   checksum: 10c0/7821278952a6dbd17358e5d08083d258f092e2a530f5bc1840657cb140fbbc5ec44293bc888258c44a18a9570cde149ed05819ac8320b9710cf22f699891e6ad
+  languageName: node
+  linkType: hard
+
+"choices.js@npm:^11.0.2":
+  version: 11.0.2
+  resolution: "choices.js@npm:11.0.2"
+  dependencies:
+    fuse.js: "npm:^7.0.0"
+  checksum: 10c0/5ae75c95b963d1bed3669a08ec59e5a3e92737ad1fead44ac5f43b9455ccae688a9d2176586bd932885129b7a900a6ca4beafd93d938f57765b899739e02187b
   languageName: node
   linkType: hard
 
@@ -1810,6 +1830,13 @@ __metadata:
   version: 1.1.2
   resolution: "function-bind@npm:1.1.2"
   checksum: 10c0/d8680ee1e5fcd4c197e4ac33b2b4dce03c71f4d91717292785703db200f5c21f977c568d28061226f9b5900cbcd2c84463646134fd5337e7925e0942bc3f46d5
+  languageName: node
+  linkType: hard
+
+"fuse.js@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "fuse.js@npm:7.0.0"
+  checksum: 10c0/3574b7fc2e0ccb047e05dbe5f8f04e8f0754f62fa209669ef426ea1354a32ae7355620788af8f1d29f94e1fdecd513f1f3787f012848a31ec90bb4e0e6092504
   languageName: node
   linkType: hard
 
