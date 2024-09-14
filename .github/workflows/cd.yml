@@ -1,0 +1,17 @@
+name: Deploy to production
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  CD:
+    name: Continuous Delivery
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy with mina to VPS
+        id: min-deploy
+        uses: SlimGee/mina-action@0.0.2
+        with:
+          command: 'deploy'
+          ssh_private_key: ${{ secrets.SSH_KEY }}
+            
