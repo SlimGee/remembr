@@ -1,4 +1,4 @@
-Rails.configuration.to_prepare do
+Rails.application.config.to_prepare do
   ActiveStorage::DirectUploadsController.class_eval do
     before_action :authenticate_user!
     rate_limit to: 20, within: 20.minutes, by: -> { current_user.id }
