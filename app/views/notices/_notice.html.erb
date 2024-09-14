@@ -63,7 +63,7 @@
 
       <% unless notice.payment_successful %>
         <div>
-          <%= button_to "Make payment to publish",
+          <%= link_to "Make payment to publish ($5.00)",
           notice_payment_path(notice),
           "data-turbo": false,
           class: "btn-primary !py-1.5 md:!py-2 !text-xs md:!text-xs !px-2 md:!px-3" %>

@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   resources :notices
   resources :notices do
     resource :notice_images, only: %i[new create]
-    post "payment" => "payment#create"
+    get "payment" => "payment#create"
   end
 
   resources :posts, only: %i[index show]

@@ -4,11 +4,12 @@ class NoticeImagesController < ApplicationController
   end
 
   def create
-    @notice.images.attach(notice_image_params[:image])
+    @notice.images.attach(notice_image_params[:images])
     if @notice.images.attached?
-      render json: @notice.images.last
+      redirect_to notice_payment_path(@notice)
     else
-      render json: @notice.images.errors.full_messages, status: :unprocessable_entity
+      redirect_to new_notice_notice_images_path(@notice), alert: "Please select at least one image."
+      # render json: @notice.images.errors.full_messages, status: :unprocessable_entity
     end
   end
 
@@ -19,6 +20,6 @@ class NoticeImagesController < ApplicationController
   end
 
   def notice_image_params
-    params.require(:notice_image).permit(:image)
+    params.require(:notice).permit(images: [])
   end
 end
