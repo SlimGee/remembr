@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  match "/404", to: "errors#not_found", via: :all
+  match "/403", to: "errors#forbidden", via: :all
+  match "/422", to: "errors#unproccessable_entity", via: :all
+  match "/500", to: "errors#internal_server_error", via: :all
+  match "/501", to: "errors#method_not_allowed", via: :all
+
   namespace :admin do
     root "home#index"
     resources :posts
@@ -7,6 +13,7 @@ Rails.application.routes.draw do
   namespace :payments do
     post "callback" => "callback#create"
   end
+
   namespace :dashboard do
     root "home#index"
   end

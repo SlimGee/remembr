@@ -22,6 +22,12 @@ module Remembr
 
     config.active_job.queue_adapter = :sidekiq
 
+    config.action_dispatch.rescue_responses["ActionPolicy::UnauthorizedAction"] = :forbidden
+    config.action_dispatch.rescue_responses["ActionPolicy::UnauthorizedScope"] = :forbidden
+    config.action_dispatch.rescue_responses["ActionPolicy::Unauthorized"] = :forbidden
+
+    config.exceptions_app = routes
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

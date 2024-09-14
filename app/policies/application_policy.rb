@@ -7,12 +7,19 @@ class ApplicationPolicy < ActionPolicy::Base
   #
   # Read more about authorization context: https://actionpolicy.evilmartians.io/#/authorization_context
 
+  default_rule :manage?
+  alias_rule :index?, :create?, :new?, to: :manage?
+
+  def manage?
+    user.has_role?(:admin)
+  end
+
   private
 
   # Define shared methods useful for most policies.
   # For example:
   #
-  #  def owner?
-  #    record.user_id == user.id
-  #  end
+  def owner?
+    record.user_id == user.id
+  end
 end

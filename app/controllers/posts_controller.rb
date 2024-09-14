@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.page(params[:page]).per(6)
+    @posts = Post.published.page(params[:page]).per(6)
   end
 
   def show
