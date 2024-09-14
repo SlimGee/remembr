@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Deploy with mina to VPS
         id: min-deploy
-        uses: SlimGee/mina-action@0.0.2
+        uses: SlimGee/mina-action@main
         with:
           command: 'deploy'
           ssh_private_key: ${{ secrets.SSH_KEY }}
