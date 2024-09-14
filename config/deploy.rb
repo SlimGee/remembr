@@ -9,6 +9,8 @@ set(:deploy_to, "/var/www/remembr.welodge.co.zw")
 set(:repository, "git@github.com:SlimGee/remembr.git")
 set(:branch, "main")
 
+set :ssh_options, "-o StrictHostKeyChecking=no"
+
 set(:user, "given")
 set(:shared_dirs, fetch(:shared_dirs, []).push("tmp/sockets", "tmp/pids", "log"))
 # add storage to shared dirs
