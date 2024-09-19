@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/jumph4x/canonical-rails.git
-  revision: 31aac4a84a1a1972fd157419f7f2e354e8b2d55d
+  revision: fbc1c88c71131ddb1352953cd6048033fd2473e5
   specs:
     canonical-rails (0.2.15)
-      actionview (>= 4.1, <= 7.2)
+      actionview (>= 4.1, < 7.3)
 
 GEM
   remote: https://rubygems.org/
@@ -137,7 +137,7 @@ GEM
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashie (5.0.0)
-    i18n (1.14.5)
+    i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     image_processing (1.13.0)
       mini_magick (>= 4.9.5, < 5)
