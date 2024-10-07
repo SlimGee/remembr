@@ -47,4 +47,5 @@ test:
 #
 production:
   !!merge <<: *default
+  host: srv-captain--mariadb-db
   database: remembr_production
