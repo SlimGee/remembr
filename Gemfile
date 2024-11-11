@@ -93,4 +93,4 @@ gem "notable", "~> 0.5.2"
 
 gem "action_policy", "~> 0.7.1"
 
-gem "rabarber", "~> 3.0"
+gem "rabarber", "~> 4.0"
